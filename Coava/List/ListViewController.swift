@@ -13,6 +13,7 @@ class ListViewController: TabmanViewController {
     
     private var viewControllers: Array<UIViewController> = []
 
+    @IBOutlet var ListTab: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,14 +30,21 @@ class ListViewController: TabmanViewController {
         let bar = TMBar.ButtonBar()
         bar.layout.transitionStyle = .snap
         bar.backgroundView.style = .clear
-        bar.layout.contentInset = UIEdgeInsets(top: 0.0, left: 16.0, bottom: 0.0, right: 16.0)
+        bar.layout.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         bar.buttons.customize {(button) in
             button.tintColor = .lightGray
-            button.selectedTintColor = .blue
+            button.selectedTintColor = UIColor(named: "ClickedColor")
         }
         
+        bar.indicator.weight = .light
+        bar.indicator.tintColor = UIColor(named: "ClickedColor")
+        bar.indicator.overscrollBehavior = .compress
+        bar.layout.alignment = .centerDistributed
+        bar.layout.contentMode = .fit
+        bar.layout.interButtonSpacing = 35
         
-        addBar(bar, dataSource: self, at: .top)
+        
+        addBar(bar, dataSource: self, at: .custom(view: ListTab, layout: nil))
     }
     
 
@@ -44,11 +52,21 @@ class ListViewController: TabmanViewController {
 
 extension ListViewController: PageboyViewControllerDataSource, TMBarDataSource {
     func barItem(for bar: Tabman.TMBar, at index: Int) -> Tabman.TMBarItemable {
-        let item = TMBarItem(title: "")
-        item.title = "Page\(index)"
-        item.image = UIImage(named: "image.png")
+//        let item = TMBarItem(title: "")
+//        //item.title = "Page\(index)"
+//        item.image = UIImage(named: "catchphrase_basic")
+//
+//        return item
         
-        return item
+        switch index {
+        case 0:
+            return TMBarItem(title: "유행어")
+        case 1:
+            return TMBarItem(title: "밈")
+        default:
+            let title = "Page\(index)"
+            return TMBarItem(title: title)
+        }
     }
     
     func viewController(for pageboyViewController: Pageboy.PageboyViewController, at index: Pageboy.PageboyViewController.PageIndex) -> UIViewController? {

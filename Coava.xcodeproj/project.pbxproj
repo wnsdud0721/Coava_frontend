@@ -96,16 +96,13 @@
 				102727CE29BEFE3400E91167 /* AppDelegate.swift */,
 				102727D029BEFE3400E91167 /* SceneDelegate.swift */,
 				102727D429BEFE3400E91167 /* Main.storyboard */,
-				107D2F2029D3F972003AC0C5 /* ListViewController.swift */,
-				104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */,
-				104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */,
-				109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */,
+				1099FF4329E308F0002B2611 /* Login */,
 				104BCD6129D3B1E100F587CF /* Home */,
+				1099FF4229E308A2002B2611 /* List */,
 				104BCD6229D3B20A00F587CF /* Game */,
+				109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */,
 				101C3BDE29C95995003EB20E /* CustomTabBarController.swift */,
 				101C3BE029C95B9F003EB20E /* Tabbar.swift */,
-				102727D229BEFE3400E91167 /* ViewController.swift */,
-				102727E229BF0A3900E91167 /* SecondViewController.swift */,
 				102727D729BEFE3400E91167 /* Assets.xcassets */,
 				102727D929BEFE3400E91167 /* LaunchScreen.storyboard */,
 				102727DC29BEFE3400E91167 /* Info.plist */,
@@ -133,6 +130,25 @@
 				1080958429CC471E003A43E4 /* GameTwoViewController.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		1099FF4229E308A2002B2611 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				107D2F2029D3F972003AC0C5 /* ListViewController.swift */,
+				104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */,
+				104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1099FF4329E308F0002B2611 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				102727D229BEFE3400E91167 /* ViewController.swift */,
+				102727E229BF0A3900E91167 /* SecondViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		1A1161D38A8641A125E0DCE3 /* Frameworks */ = {
@@ -435,6 +451,7 @@
 				DEVELOPMENT_TEAM = 7425535F6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Coava/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "음성인식을 위한 권한 필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -464,6 +481,7 @@
 				DEVELOPMENT_TEAM = 7425535F6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Coava/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "음성인식을 위한 권한 필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
