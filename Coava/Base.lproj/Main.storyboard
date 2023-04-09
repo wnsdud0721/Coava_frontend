@@ -1214,10 +1214,10 @@
             </objects>
             <point key="canvasLocation" x="909.60000000000002" y="1525.8620689655172"/>
         </scene>
-        <!--View Controller-->
+        <!--Store View Controller-->
         <scene sceneID="b75-Q3-1Kc">
             <objects>
-                <viewController id="eHl-b4-tG2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoreViewController" id="eHl-b4-tG2" customClass="StoreViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cBf-hb-gmd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1272,13 +1272,11 @@
                                 <rect key="frame" x="62" y="216" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hM-Xo-Azy">
-                                <rect key="frame" x="-7" y="469" width="374" height="240"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="3VC-xA-D0y" kind="embed" id="7VC-YQ-sKw"/>
-                                </connections>
-                            </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="StoreTab" translatesAutoresizingMaskIntoConstraints="NO" id="woO-sr-t05">
+                                <rect key="frame" x="0.0" y="474" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EQR-Ae-AjA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1315,10 +1313,82 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="StoreTab" destination="woO-sr-t05" id="0vO-R4-5By"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDa-0B-4ge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950" y="2280"/>
+            <point key="canvasLocation" x="1949.5999999999999" y="2279.5566502463057"/>
+        </scene>
+        <!--Hat View Controller-->
+        <scene sceneID="kap-F1-Wzp">
+            <objects>
+                <viewController storyboardIdentifier="HatViewController" id="Z7G-Rp-NLD" customClass="HatViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aDE-wp-Wc2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhO-Mg-KLB">
+                                <rect key="frame" x="150" y="654" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HbI-w9-RRz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSc-jx-yda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="2280"/>
+        </scene>
+        <!--Glasses View Controller-->
+        <scene sceneID="eXl-0K-Y6F">
+            <objects>
+                <viewController storyboardIdentifier="GlassesViewController" id="XF8-V4-853" customClass="GlassesViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4k-Jo-nx4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-a8-1WE">
+                                <rect key="frame" x="150" y="652" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vl2-wL-2Tn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qr-zJ-ayv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3497" y="2279"/>
+        </scene>
+        <!--Hair View Controller-->
+        <scene sceneID="fwg-Zc-r6E">
+            <objects>
+                <viewController storyboardIdentifier="HairViewController" id="fcQ-4A-7B9" customClass="HairViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cDd-AU-AvO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-rs-RuF">
+                                <rect key="frame" x="150" y="657" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1BA-Zf-bED"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mne-aW-a5r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4380" y="2280"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ls2-jO-fbn">
@@ -1385,21 +1455,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zW-gL-hLM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950" y="3026"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="MPB-Rc-7gr">
-            <objects>
-                <viewController id="3VC-xA-D0y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9a4-fQ-J3b">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="kXY-dX-nfT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WgS-4c-K1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2809" y="2735"/>
         </scene>
         <!--Buzzword List View Controller-->
         <scene sceneID="Mrk-ra-8sg">
