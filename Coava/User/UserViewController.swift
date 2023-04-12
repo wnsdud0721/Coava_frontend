@@ -1,29 +1,31 @@
 //
-//  ListViewController.swift
+//  UserViewController.swift
 //  Coava
 //
-//  Created by Junyoung_Hong on 2023/03/29.
+//  Created by Junyoung_Hong on 2023/04/12.
 //
 
 import UIKit
 import Tabman
 import Pageboy
 
-class ListViewController: TabmanViewController {
-    
-    private var viewControllers: Array<UIViewController> = []
+class UserViewController: TabmanViewController {
 
-    @IBOutlet var ListTab: UIView!
+    private var viewControllers: Array<UIViewController> = []
+    
+    @IBOutlet var UserTab: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        let buzzwordList = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BuzzwordListViewController") as! BuzzwordListViewController
-        let memeList = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemeListViewController") as! MemeListViewController
+        let hatUser = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserHatViewController") as! UserHatViewController
+        let glassesUser = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserGlassesViewController") as! UserGlassesViewController
+        let hairUser = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserHairViewController") as! UserHairViewController
         
-        viewControllers.append(buzzwordList)
-        viewControllers.append(memeList)
+        viewControllers.append(hatUser)
+        viewControllers.append(glassesUser)
+        viewControllers.append(hairUser)
         
         self.dataSource = self
         
@@ -44,25 +46,22 @@ class ListViewController: TabmanViewController {
         bar.layout.interButtonSpacing = 35
         
         
-        addBar(bar, dataSource: self, at: .custom(view: ListTab, layout: nil))
+        addBar(bar, dataSource: self, at: .custom(view: UserTab, layout: nil))
     }
     
 
 }
 
-extension ListViewController: PageboyViewControllerDataSource, TMBarDataSource {
-    func barItem(for bar: Tabman.TMBar, at index: Int) -> Tabman.TMBarItemable {
-//        let item = TMBarItem(title: "")
-//        //item.title = "Page\(index)"
-//        item.image = UIImage(named: "catchphrase_basic")
-//
-//        return item
+extension UserViewController: PageboyViewControllerDataSource, TMBarDataSource {
+    func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         
         switch index {
         case 0:
-            return TMBarItem(title: "유행어")
+            return TMBarItem(title: "모자")
         case 1:
-            return TMBarItem(title: "밈")
+            return TMBarItem(title: "안경")
+        case 2:
+            return TMBarItem(title: "머리카락")
         default:
             let title = "Page\(index)"
             return TMBarItem(title: title)

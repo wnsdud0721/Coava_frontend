@@ -38,7 +38,7 @@ class StoreViewController: TabmanViewController {
             button.selectedTintColor = UIColor(named: "ClickedColor")
         }
         
-        bar.indicator.weight = .light
+        bar.indicator.weight = .medium
         bar.indicator.tintColor = UIColor(named: "ClickedColor")
         bar.indicator.overscrollBehavior = .compress
         bar.layout.alignment = .centerDistributed
