@@ -62,14 +62,14 @@ class Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
         return UICollectionViewCell()
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let moveExplain = self.storyboard?.instantiateViewController(withIdentifier: "ExplainViewController") as? ExplainViewController else {
-            return
-        }
-        moveExplain.modalTransitionStyle = .crossDissolve
-        moveExplain.modalPresentationStyle = .fullScreen
-        self.present(moveExplain, animated: true)
-    }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        guard let moveExplain = self.storyboard?.instantiateViewController(withIdentifier: "ExplainViewController") as? ExplainViewController else {
+//            return
+//        }
+//        moveExplain.modalTransitionStyle = .crossDissolve
+//        moveExplain.modalPresentationStyle = .fullScreen
+//        self.present(moveExplain, animated: true)
+//    }
     
 
     override func viewDidLoad() {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1013EDDB29EA7D1C006EE2D4 /* meme_list_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013EDDA29EA7D1C006EE2D4 /* meme_list_cell.swift */; };
+		1013EDDD29EA7D4C006EE2D4 /* buzzword_list_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013EDDC29EA7D4C006EE2D4 /* buzzword_list_cell.swift */; };
+		1013EDDF29EA7D66006EE2D4 /* coavaMemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013EDDE29EA7D66006EE2D4 /* coavaMemeList.swift */; };
+		1013EDE129EA7D71006EE2D4 /* coavaBuzzwordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013EDE029EA7D71006EE2D4 /* coavaBuzzwordList.swift */; };
 		101C3BDF29C95995003EB20E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C3BDE29C95995003EB20E /* CustomTabBarController.swift */; };
 		101C3BE129C95B9F003EB20E /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C3BE029C95B9F003EB20E /* Tabbar.swift */; };
 		102727CF29BEFE3400E91167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102727CE29BEFE3400E91167 /* AppDelegate.swift */; };
@@ -41,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		06E4A9FA6A207426252FF574 /* Pods-Coava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coava.debug.xcconfig"; path = "Target Support Files/Pods-Coava/Pods-Coava.debug.xcconfig"; sourceTree = "<group>"; };
+		1013EDDA29EA7D1C006EE2D4 /* meme_list_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = meme_list_cell.swift; path = Coava/meme_list_cell.swift; sourceTree = SOURCE_ROOT; };
+		1013EDDC29EA7D4C006EE2D4 /* buzzword_list_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = buzzword_list_cell.swift; path = Coava/buzzword_list_cell.swift; sourceTree = SOURCE_ROOT; };
+		1013EDDE29EA7D66006EE2D4 /* coavaMemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coavaMemeList.swift; sourceTree = "<group>"; };
+		1013EDE029EA7D71006EE2D4 /* coavaBuzzwordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coavaBuzzwordList.swift; sourceTree = "<group>"; };
 		101C3BDE29C95995003EB20E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		101C3BE029C95B9F003EB20E /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		102727CB29BEFE3400E91167 /* Coava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coava.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +161,10 @@
 		1099FF4229E308A2002B2611 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				1013EDDC29EA7D4C006EE2D4 /* buzzword_list_cell.swift */,
+				1013EDE029EA7D71006EE2D4 /* coavaBuzzwordList.swift */,
+				1013EDDA29EA7D1C006EE2D4 /* meme_list_cell.swift */,
+				1013EDDE29EA7D66006EE2D4 /* coavaMemeList.swift */,
 				107D2F2029D3F972003AC0C5 /* ListViewController.swift */,
 				104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */,
 				104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */,
@@ -331,10 +343,13 @@
 				10B22A2F29CD8D6200754373 /* coavaBuzzword.swift in Sources */,
 				101C3BE129C95B9F003EB20E /* Tabbar.swift in Sources */,
 				10FB3D8329E641C1008D86D3 /* UserHairViewController.swift in Sources */,
+				1013EDDF29EA7D66006EE2D4 /* coavaMemeList.swift in Sources */,
 				10B22A3129CD92BF00754373 /* Home.swift in Sources */,
 				10E05B1929E31A2E0016EBF6 /* HairViewController.swift in Sources */,
+				1013EDE129EA7D71006EE2D4 /* coavaBuzzwordList.swift in Sources */,
 				102727CF29BEFE3400E91167 /* AppDelegate.swift in Sources */,
 				10E05B0F29E318520016EBF6 /* StoreViewController.swift in Sources */,
+				1013EDDD29EA7D4C006EE2D4 /* buzzword_list_cell.swift in Sources */,
 				10E37F7029CE00A700D86791 /* coavaMeme.swift in Sources */,
 				102727D129BEFE3400E91167 /* SceneDelegate.swift in Sources */,
 				104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */,
@@ -349,6 +364,7 @@
 				10FB3D7D29E64157008D86D3 /* UserViewController.swift in Sources */,
 				1080958129CC4705003A43E4 /* GameTabViewController.swift in Sources */,
 				10E05B1D29E31AC10016EBF6 /* GlassesViewController.swift in Sources */,
+				1013EDDB29EA7D1C006EE2D4 /* meme_list_cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

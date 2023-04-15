@@ -43,7 +43,7 @@ class UserViewController: TabmanViewController {
         bar.indicator.overscrollBehavior = .compress
         bar.layout.alignment = .centerDistributed
         bar.layout.contentMode = .fit
-        bar.layout.interButtonSpacing = 35
+        bar.layout.interButtonSpacing = 0
         
         
         addBar(bar, dataSource: self, at: .custom(view: UserTab, layout: nil))

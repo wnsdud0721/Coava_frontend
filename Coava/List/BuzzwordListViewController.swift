@@ -7,32 +7,30 @@
 
 import UIKit
 
-class BuzzwordListViewController: UIViewController {
+class BuzzwordListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return coavabuzzwordlist.count
+    }
     
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        if collectionView == buzzwordListCollectionView {
-//            return coavabuzzword.count
-//        }
-//        return 0
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        if collectionView == buzzwordListCollectionView {
-//            let buzzwordList_cell = collectionView.dequeueReusableCell(withReuseIdentifier: "buzzwordList_cell", for: indexPath) as! buzzword_cell
-//
-//            return buzzwordList_cell
-//        }
-//        return UICollectionViewCell()
-//    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let buzzword_list_cell = collectionView.dequeueReusableCell(withReuseIdentifier: "buzzword_list_cell", for: indexPath) as! buzzword_list_cell
+        
+        buzzword_list_cell.setup1(with: coavabuzzwordlist[indexPath.row])
+        buzzword_list_cell.coavaBuzzwordListImg.layer.borderColor = UIColor.lightGray.cgColor
+        buzzword_list_cell.coavaBuzzwordListImg.layer.borderWidth = 0.5
+        buzzword_list_cell.coavaBuzzwordListImg.layer.cornerRadius = 10
+        
+        return buzzword_list_cell
+    }
     
-
     @IBOutlet var buzzwordListCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buzzwordListCollectionView.delegate = self
+        buzzwordListCollectionView.dataSource = self
 
-        // Do any additional setup after loading the view.
-//        buzzwordListCollectionView.delegate = self
-//        buzzwordListCollectionView.dataSource = self
     }
     
 
