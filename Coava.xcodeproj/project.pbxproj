@@ -20,6 +20,7 @@
 		102727D829BEFE3400E91167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102727D729BEFE3400E91167 /* Assets.xcassets */; };
 		102727DB29BEFE3400E91167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102727D929BEFE3400E91167 /* LaunchScreen.storyboard */; };
 		102727E329BF0A3900E91167 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102727E229BF0A3900E91167 /* SecondViewController.swift */; };
+		1035EAAD29EA9338002B6318 /* STTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035EAAC29EA9338002B6318 /* STTViewController.swift */; };
 		104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */; };
 		104BCD6029D3AF6E00F587CF /* MemeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */; };
 		107D2F2129D3F972003AC0C5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D2F2029D3F972003AC0C5 /* ListViewController.swift */; };
@@ -36,6 +37,8 @@
 		10E05B1D29E31AC10016EBF6 /* GlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B1C29E31AC10016EBF6 /* GlassesViewController.swift */; };
 		10E37F6E29CE009700D86791 /* meme_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E37F6D29CE009700D86791 /* meme_cell.swift */; };
 		10E37F7029CE00A700D86791 /* coavaMeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E37F6F29CE00A700D86791 /* coavaMeme.swift */; };
+		10F0A0CF29ED074800531D76 /* sttTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F0A0CE29ED074800531D76 /* sttTestViewController.swift */; };
+		10F0A0D129ED0D4D00531D76 /* ttsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F0A0D029ED0D4D00531D76 /* ttsTestViewController.swift */; };
 		10FB3D7D29E64157008D86D3 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D7C29E64157008D86D3 /* UserViewController.swift */; };
 		10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D7E29E64190008D86D3 /* UserHatViewController.swift */; };
 		10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D8029E641B6008D86D3 /* UserGlassesViewController.swift */; };
@@ -60,6 +63,7 @@
 		102727DA29BEFE3400E91167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		102727DC29BEFE3400E91167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		102727E229BF0A3900E91167 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1035EAAC29EA9338002B6318 /* STTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTViewController.swift; sourceTree = "<group>"; };
 		104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzwordListViewController.swift; sourceTree = "<group>"; };
 		104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeListViewController.swift; sourceTree = "<group>"; };
 		107D2F2029D3F972003AC0C5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 		10E05B1C29E31AC10016EBF6 /* GlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesViewController.swift; sourceTree = "<group>"; };
 		10E37F6D29CE009700D86791 /* meme_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meme_cell.swift; sourceTree = "<group>"; };
 		10E37F6F29CE00A700D86791 /* coavaMeme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coavaMeme.swift; sourceTree = "<group>"; };
+		10F0A0CE29ED074800531D76 /* sttTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sttTestViewController.swift; sourceTree = "<group>"; };
+		10F0A0D029ED0D4D00531D76 /* ttsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ttsTestViewController.swift; sourceTree = "<group>"; };
 		10FB3D7C29E64157008D86D3 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		10FB3D7E29E64190008D86D3 /* UserHatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHatViewController.swift; sourceTree = "<group>"; };
 		10FB3D8029E641B6008D86D3 /* UserGlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGlassesViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,9 @@
 				102727CE29BEFE3400E91167 /* AppDelegate.swift */,
 				102727D029BEFE3400E91167 /* SceneDelegate.swift */,
 				102727D429BEFE3400E91167 /* Main.storyboard */,
+				10F0A0D029ED0D4D00531D76 /* ttsTestViewController.swift */,
+				10F0A0CE29ED074800531D76 /* sttTestViewController.swift */,
+				1035EAAC29EA9338002B6318 /* STTViewController.swift */,
 				1099FF4329E308F0002B2611 /* Login */,
 				104BCD6129D3B1E100F587CF /* Home */,
 				1099FF4229E308A2002B2611 /* List */,
@@ -351,8 +360,10 @@
 				10E05B0F29E318520016EBF6 /* StoreViewController.swift in Sources */,
 				1013EDDD29EA7D4C006EE2D4 /* buzzword_list_cell.swift in Sources */,
 				10E37F7029CE00A700D86791 /* coavaMeme.swift in Sources */,
+				10F0A0CF29ED074800531D76 /* sttTestViewController.swift in Sources */,
 				102727D129BEFE3400E91167 /* SceneDelegate.swift in Sources */,
 				104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */,
+				1035EAAD29EA9338002B6318 /* STTViewController.swift in Sources */,
 				104BCD6029D3AF6E00F587CF /* MemeListViewController.swift in Sources */,
 				10E37F6E29CE009700D86791 /* meme_cell.swift in Sources */,
 				1080958329CC4713003A43E4 /* GameOneViewController.swift in Sources */,
@@ -362,6 +373,7 @@
 				10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */,
 				10E05B1129E319030016EBF6 /* HatViewController.swift in Sources */,
 				10FB3D7D29E64157008D86D3 /* UserViewController.swift in Sources */,
+				10F0A0D129ED0D4D00531D76 /* ttsTestViewController.swift in Sources */,
 				1080958129CC4705003A43E4 /* GameTabViewController.swift in Sources */,
 				10E05B1D29E31AC10016EBF6 /* GlassesViewController.swift in Sources */,
 				1013EDDB29EA7D1C006EE2D4 /* meme_list_cell.swift in Sources */,
@@ -515,7 +527,8 @@
 				DEVELOPMENT_TEAM = 7425535F6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Coava/Info.plist;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "음성인식을 위한 권한 필요";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = test;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = Coava;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -545,7 +558,8 @@
 				DEVELOPMENT_TEAM = 7425535F6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Coava/Info.plist;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "음성인식을 위한 권한 필요";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = test;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = Coava;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
