@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Coava/Pods-Coava-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework
 ${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework

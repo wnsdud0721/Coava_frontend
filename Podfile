@@ -8,5 +8,6 @@ target 'Coava' do
   # Pods for Coava
 
   pod 'Tabman', '~> 3.0'
+  pod 'Alamofire'
 
 end
