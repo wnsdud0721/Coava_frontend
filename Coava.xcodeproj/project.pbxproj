@@ -43,6 +43,7 @@
 		10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D7E29E64190008D86D3 /* UserHatViewController.swift */; };
 		10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D8029E641B6008D86D3 /* UserGlassesViewController.swift */; };
 		10FB3D8329E641C1008D86D3 /* UserHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D8229E641C1008D86D3 /* UserHairViewController.swift */; };
+		705B6D6429EEC37100288D05 /* ButtonChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B6D6329EEC37100288D05 /* ButtonChange.swift */; };
 		DC84B42726928A33E96AB414 /* Pods_Coava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2EB20EF699DEB9B3A3A23F /* Pods_Coava.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		10FB3D7E29E64190008D86D3 /* UserHatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHatViewController.swift; sourceTree = "<group>"; };
 		10FB3D8029E641B6008D86D3 /* UserGlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGlassesViewController.swift; sourceTree = "<group>"; };
 		10FB3D8229E641C1008D86D3 /* UserHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHairViewController.swift; sourceTree = "<group>"; };
+		705B6D6329EEC37100288D05 /* ButtonChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChange.swift; sourceTree = "<group>"; };
 		C4A63A1FEFB548DFE5E957D4 /* Pods-Coava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coava.release.xcconfig"; path = "Target Support Files/Pods-Coava/Pods-Coava.release.xcconfig"; sourceTree = "<group>"; };
 		CF2EB20EF699DEB9B3A3A23F /* Pods_Coava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				102727CE29BEFE3400E91167 /* AppDelegate.swift */,
 				102727D029BEFE3400E91167 /* SceneDelegate.swift */,
 				102727D429BEFE3400E91167 /* Main.storyboard */,
+				705B6D6329EEC37100288D05 /* ButtonChange.swift */,
 				10F0A0D029ED0D4D00531D76 /* ttsTestViewController.swift */,
 				10F0A0CE29ED074800531D76 /* sttTestViewController.swift */,
 				1035EAAC29EA9338002B6318 /* STTViewController.swift */,
@@ -371,6 +374,7 @@
 				1080958529CC471E003A43E4 /* GameTwoViewController.swift in Sources */,
 				109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */,
 				10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */,
+				705B6D6429EEC37100288D05 /* ButtonChange.swift in Sources */,
 				10E05B1129E319030016EBF6 /* HatViewController.swift in Sources */,
 				10FB3D7D29E64157008D86D3 /* UserViewController.swift in Sources */,
 				10F0A0D129ED0D4D00531D76 /* ttsTestViewController.swift in Sources */,
