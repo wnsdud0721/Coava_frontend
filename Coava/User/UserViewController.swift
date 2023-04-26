@@ -14,6 +14,16 @@ class UserViewController: TabmanViewController {
     private var viewControllers: Array<UIViewController> = []
     
     @IBOutlet var UserTab: UIView!
+    
+    @IBAction func moveUserFix(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "UserFixViewController") as? UserFixViewController else {
+            return
+        }
+        nextVC.modalTransitionStyle = .crossDissolve
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
