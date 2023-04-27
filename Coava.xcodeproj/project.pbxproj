@@ -43,6 +43,8 @@
 		10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D7E29E64190008D86D3 /* UserHatViewController.swift */; };
 		10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D8029E641B6008D86D3 /* UserGlassesViewController.swift */; };
 		10FB3D8329E641C1008D86D3 /* UserHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB3D8229E641C1008D86D3 /* UserHairViewController.swift */; };
+		701F2AF529F8EA40003562B2 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701F2AF429F8EA40003562B2 /* APIConstants.swift */; };
+		701F2AF929F90B2B003562B2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701F2AF829F90B2B003562B2 /* NetworkResult.swift */; };
 		705B6D6429EEC37100288D05 /* ButtonChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B6D6329EEC37100288D05 /* ButtonChange.swift */; };
 		DC84B42726928A33E96AB414 /* Pods_Coava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2EB20EF699DEB9B3A3A23F /* Pods_Coava.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,9 @@
 		10FB3D7E29E64190008D86D3 /* UserHatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHatViewController.swift; sourceTree = "<group>"; };
 		10FB3D8029E641B6008D86D3 /* UserGlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGlassesViewController.swift; sourceTree = "<group>"; };
 		10FB3D8229E641C1008D86D3 /* UserHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHairViewController.swift; sourceTree = "<group>"; };
+		701F2AF429F8EA40003562B2 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		701F2AF829F90B2B003562B2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		701F2AFA29F9157E003562B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Coava/Assets.xcassets; sourceTree = "<group>"; };
 		705B6D6329EEC37100288D05 /* ButtonChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChange.swift; sourceTree = "<group>"; };
 		C4A63A1FEFB548DFE5E957D4 /* Pods-Coava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coava.release.xcconfig"; path = "Target Support Files/Pods-Coava/Pods-Coava.release.xcconfig"; sourceTree = "<group>"; };
 		CF2EB20EF699DEB9B3A3A23F /* Pods_Coava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +112,7 @@
 		102727C229BEFE3400E91167 = {
 			isa = PBXGroup;
 			children = (
+				701F2AFA29F9157E003562B2 /* Assets.xcassets */,
 				102727CD29BEFE3400E91167 /* Coava */,
 				102727CC29BEFE3400E91167 /* Products */,
 				7E62E221186CDA9D9383E716 /* Pods */,
@@ -144,6 +150,8 @@
 				102727D729BEFE3400E91167 /* Assets.xcassets */,
 				102727D929BEFE3400E91167 /* LaunchScreen.storyboard */,
 				102727DC29BEFE3400E91167 /* Info.plist */,
+				701F2AF429F8EA40003562B2 /* APIConstants.swift */,
+				701F2AF829F90B2B003562B2 /* NetworkResult.swift */,
 			);
 			path = Coava;
 			sourceTree = "<group>";
@@ -292,8 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				102727DB29BEFE3400E91167 /* LaunchScreen.storyboard in Resources */,
 				102727D829BEFE3400E91167 /* Assets.xcassets in Resources */,
+				102727DB29BEFE3400E91167 /* LaunchScreen.storyboard in Resources */,
 				102727D629BEFE3400E91167 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				102727E329BF0A3900E91167 /* SecondViewController.swift in Sources */,
+				701F2AF529F8EA40003562B2 /* APIConstants.swift in Sources */,
 				10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */,
+				701F2AF929F90B2B003562B2 /* NetworkResult.swift in Sources */,
 				10B22A2D29CD8D4A00754373 /* buzzword_cell.swift in Sources */,
 				102727D329BEFE3400E91167 /* ViewController.swift in Sources */,
 				101C3BDF29C95995003EB20E /* CustomTabBarController.swift in Sources */,
