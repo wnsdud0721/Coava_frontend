@@ -18,5 +18,14 @@ class GameTwoViewController: UIViewController {
     @IBAction func backGameTab(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
+    
+    @IBAction func moveGameTwoExplain(_ sender: Any) {
+        guard let moveLoginPage = self.storyboard?.instantiateViewController(withIdentifier: "GameTwoExplainViewController") as? GameTwoExplainViewController else {
+            return
+        }
+        moveLoginPage.modalTransitionStyle = .crossDissolve
+        moveLoginPage.modalPresentationStyle = .fullScreen
+        self.present(moveLoginPage, animated: true)
+    }
 
 }

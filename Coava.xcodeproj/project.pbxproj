@@ -32,6 +32,8 @@
 		10B22A2D29CD8D4A00754373 /* buzzword_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */; };
 		10B22A2F29CD8D6200754373 /* coavaBuzzword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2E29CD8D6200754373 /* coavaBuzzword.swift */; };
 		10B22A3129CD92BF00754373 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A3029CD92BF00754373 /* Home.swift */; };
+		10B94EE42A0A9C9C00A1913F /* GameOneExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */; };
+		10B94EE82A0A9CFC00A1913F /* GameTwoExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */; };
 		10E05B0F29E318520016EBF6 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B0E29E318520016EBF6 /* StoreViewController.swift */; };
 		10E05B1129E319030016EBF6 /* HatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B1029E319030016EBF6 /* HatViewController.swift */; };
 		10E05B1929E31A2E0016EBF6 /* HairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B1829E31A2E0016EBF6 /* HairViewController.swift */; };
@@ -79,6 +81,8 @@
 		10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buzzword_cell.swift; sourceTree = "<group>"; };
 		10B22A2E29CD8D6200754373 /* coavaBuzzword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coavaBuzzword.swift; sourceTree = "<group>"; };
 		10B22A3029CD92BF00754373 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOneExplainViewController.swift; sourceTree = "<group>"; };
+		10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwoExplainViewController.swift; sourceTree = SOURCE_ROOT; };
 		10E05B0E29E318520016EBF6 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		10E05B1029E319030016EBF6 /* HatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatViewController.swift; sourceTree = "<group>"; };
 		10E05B1829E31A2E0016EBF6 /* HairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +179,9 @@
 			children = (
 				1080958029CC4705003A43E4 /* GameTabViewController.swift */,
 				1080958229CC4713003A43E4 /* GameOneViewController.swift */,
+				10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */,
 				1080958429CC471E003A43E4 /* GameTwoViewController.swift */,
+				10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B94EE82A0A9CFC00A1913F /* GameTwoExplainViewController.swift in Sources */,
 				102727E329BF0A3900E91167 /* SecondViewController.swift in Sources */,
 				701F2AF529F8EA40003562B2 /* APIConstants.swift in Sources */,
 				10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */,
@@ -385,6 +392,7 @@
 				1080958329CC4713003A43E4 /* GameOneViewController.swift in Sources */,
 				107D2F2129D3F972003AC0C5 /* ListViewController.swift in Sources */,
 				1080958529CC471E003A43E4 /* GameTwoViewController.swift in Sources */,
+				10B94EE42A0A9C9C00A1913F /* GameOneExplainViewController.swift in Sources */,
 				109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */,
 				10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */,
 				705B6D6429EEC37100288D05 /* ButtonChange.swift in Sources */,
