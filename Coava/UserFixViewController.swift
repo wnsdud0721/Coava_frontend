@@ -25,7 +25,7 @@ class UserFixViewController: UIViewController {
     
     @IBAction func changeProfile(_ sender: Any) {
         
-        let alert = UIAlertController(title: "원하는 타이틀", message: "원하는 메시지", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "프로필 사진 변경", message: "앨범에서 원하는 사진을 선택해서 프로필 사진을 변경하세요", preferredStyle: .actionSheet)
         
         let library = UIAlertAction(title: "사진앨범", style: .default) { (action) in self.openLibrary() }
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)

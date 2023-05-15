@@ -13,17 +13,30 @@ class UserHatViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        buttonOn = UIImage(named: "wear_basic_1")
+        buttonOff = UIImage(named: "wear_hat")
+
+        avatar.image = buttonOn
     }
     
+    
+    var buttonOn: UIImage?
+    var buttonOff: UIImage?
+    
+    @IBOutlet var avatar: UIImageView!
+    @IBOutlet var wear: UIButton!
+    @IBAction func wear(_ sender: Any) {
+        
+        if wear.isSelected{
+            wear.isSelected = false
+            avatar.image = buttonOn
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        else{
+            wear.isSelected = true
+            avatar.image = buttonOff
+        }
     }
-    */
+    
 
 }

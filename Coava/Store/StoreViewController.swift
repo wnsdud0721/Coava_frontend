@@ -14,10 +14,16 @@ class StoreViewController: TabmanViewController {
     private var viewControllers: Array<UIViewController> = []
     
     @IBOutlet var StoreTab: UIView!
+    
+    @IBOutlet var userImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        userImage.layer.cornerRadius = userImage.frame.height/2
+        userImage.clipsToBounds = true
         
         let hatStore = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HatViewController") as! HatViewController
         let glassesStore = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GlassesViewController") as! GlassesViewController
@@ -52,7 +58,7 @@ class StoreViewController: TabmanViewController {
 
 }
 
-extension StoreViewController: PageboyViewControllerDataSource, TMBarDataSource {
+extension StoreViewController:  PageboyViewControllerDataSource, TMBarDataSource {
     func barItem(for bar: Tabman.TMBar, at index: Int) -> Tabman.TMBarItemable {
         
         switch index {
@@ -79,4 +85,5 @@ extension StoreViewController: PageboyViewControllerDataSource, TMBarDataSource 
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
         return viewControllers.count
     }
+    
 }
