@@ -84,8 +84,9 @@ class Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
         
         //navigationController?.hidesBarsOnSwipe = true
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
-
-
 }
