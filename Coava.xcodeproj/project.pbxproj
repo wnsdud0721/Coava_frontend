@@ -24,14 +24,21 @@
 		104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */; };
 		104BCD6029D3AF6E00F587CF /* MemeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */; };
 		107D2F2129D3F972003AC0C5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D2F2029D3F972003AC0C5 /* ListViewController.swift */; };
+		107E7DF52A1334AB001666D1 /* itemCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E7DF42A1334AB001666D1 /* itemCheckViewController.swift */; };
+		107E7DF72A133B5C001666D1 /* homeCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E7DF62A133B5C001666D1 /* homeCheckViewController.swift */; };
+		107E7DF92A13418C001666D1 /* gameCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E7DF82A13418C001666D1 /* gameCheckViewController.swift */; };
 		1080958129CC4705003A43E4 /* GameTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080958029CC4705003A43E4 /* GameTabViewController.swift */; };
 		1080958329CC4713003A43E4 /* GameOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080958229CC4713003A43E4 /* GameOneViewController.swift */; };
 		1080958529CC471E003A43E4 /* GameTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080958429CC471E003A43E4 /* GameTwoViewController.swift */; };
+		1080F93C2A15A74B0024C309 /* serverConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */; };
 		1083B30E29EE35E900BBBA87 /* UserFixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083B30D29EE35E900BBBA87 /* UserFixViewController.swift */; };
 		109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */; };
 		10B22A2D29CD8D4A00754373 /* buzzword_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */; };
 		10B22A2F29CD8D6200754373 /* coavaBuzzword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2E29CD8D6200754373 /* coavaBuzzword.swift */; };
 		10B22A3129CD92BF00754373 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A3029CD92BF00754373 /* Home.swift */; };
+		10B94EE42A0A9C9C00A1913F /* GameOneExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */; };
+		10B94EE82A0A9CFC00A1913F /* GameTwoExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */; };
+		10C128D22A1921F40075F484 /* secondTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C128D12A1921F40075F484 /* secondTestViewController.swift */; };
 		10E05B0F29E318520016EBF6 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B0E29E318520016EBF6 /* StoreViewController.swift */; };
 		10E05B1129E319030016EBF6 /* HatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B1029E319030016EBF6 /* HatViewController.swift */; };
 		10E05B1929E31A2E0016EBF6 /* HairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E05B1829E31A2E0016EBF6 /* HairViewController.swift */; };
@@ -71,14 +78,21 @@
 		104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzwordListViewController.swift; sourceTree = "<group>"; };
 		104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeListViewController.swift; sourceTree = "<group>"; };
 		107D2F2029D3F972003AC0C5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		107E7DF42A1334AB001666D1 /* itemCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCheckViewController.swift; sourceTree = "<group>"; };
+		107E7DF62A133B5C001666D1 /* homeCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCheckViewController.swift; sourceTree = "<group>"; };
+		107E7DF82A13418C001666D1 /* gameCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameCheckViewController.swift; sourceTree = "<group>"; };
 		1080958029CC4705003A43E4 /* GameTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabViewController.swift; sourceTree = "<group>"; };
 		1080958229CC4713003A43E4 /* GameOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOneViewController.swift; sourceTree = "<group>"; };
 		1080958429CC471E003A43E4 /* GameTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwoViewController.swift; sourceTree = "<group>"; };
+		1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serverConnectViewController.swift; sourceTree = "<group>"; };
 		1083B30D29EE35E900BBBA87 /* UserFixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserFixViewController.swift; path = Coava/UserFixViewController.swift; sourceTree = SOURCE_ROOT; };
 		109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
 		10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buzzword_cell.swift; sourceTree = "<group>"; };
 		10B22A2E29CD8D6200754373 /* coavaBuzzword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coavaBuzzword.swift; sourceTree = "<group>"; };
 		10B22A3029CD92BF00754373 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOneExplainViewController.swift; sourceTree = "<group>"; };
+		10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwoExplainViewController.swift; sourceTree = SOURCE_ROOT; };
+		10C128D12A1921F40075F484 /* secondTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTestViewController.swift; sourceTree = "<group>"; };
 		10E05B0E29E318520016EBF6 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		10E05B1029E319030016EBF6 /* HatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatViewController.swift; sourceTree = "<group>"; };
 		10E05B1829E31A2E0016EBF6 /* HairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +150,8 @@
 				102727CE29BEFE3400E91167 /* AppDelegate.swift */,
 				102727D029BEFE3400E91167 /* SceneDelegate.swift */,
 				102727D429BEFE3400E91167 /* Main.storyboard */,
+				10C128D12A1921F40075F484 /* secondTestViewController.swift */,
+				1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */,
 				705B6D6329EEC37100288D05 /* ButtonChange.swift */,
 				10F0A0D029ED0D4D00531D76 /* ttsTestViewController.swift */,
 				10F0A0CE29ED074800531D76 /* sttTestViewController.swift */,
@@ -161,6 +177,7 @@
 		104BCD6129D3B1E100F587CF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				107E7DF62A133B5C001666D1 /* homeCheckViewController.swift */,
 				10B22A3029CD92BF00754373 /* Home.swift */,
 				10E37F6D29CE009700D86791 /* meme_cell.swift */,
 				10E37F6F29CE00A700D86791 /* coavaMeme.swift */,
@@ -173,9 +190,12 @@
 		104BCD6229D3B20A00F587CF /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				107E7DF82A13418C001666D1 /* gameCheckViewController.swift */,
 				1080958029CC4705003A43E4 /* GameTabViewController.swift */,
 				1080958229CC4713003A43E4 /* GameOneViewController.swift */,
+				10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */,
 				1080958429CC471E003A43E4 /* GameTwoViewController.swift */,
+				10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -206,6 +226,7 @@
 		10E05B0D29E318280016EBF6 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				107E7DF42A1334AB001666D1 /* itemCheckViewController.swift */,
 				10E05B0E29E318520016EBF6 /* StoreViewController.swift */,
 				10E05B1029E319030016EBF6 /* HatViewController.swift */,
 				10E05B1C29E31AC10016EBF6 /* GlassesViewController.swift */,
@@ -358,12 +379,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B94EE82A0A9CFC00A1913F /* GameTwoExplainViewController.swift in Sources */,
 				102727E329BF0A3900E91167 /* SecondViewController.swift in Sources */,
 				701F2AF529F8EA40003562B2 /* APIConstants.swift in Sources */,
 				10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */,
 				701F2AF929F90B2B003562B2 /* NetworkResult.swift in Sources */,
 				10B22A2D29CD8D4A00754373 /* buzzword_cell.swift in Sources */,
 				102727D329BEFE3400E91167 /* ViewController.swift in Sources */,
+				107E7DF72A133B5C001666D1 /* homeCheckViewController.swift in Sources */,
+				10C128D22A1921F40075F484 /* secondTestViewController.swift in Sources */,
 				101C3BDF29C95995003EB20E /* CustomTabBarController.swift in Sources */,
 				10B22A2F29CD8D6200754373 /* coavaBuzzword.swift in Sources */,
 				101C3BE129C95B9F003EB20E /* Tabbar.swift in Sources */,
@@ -377,6 +401,7 @@
 				1013EDDD29EA7D4C006EE2D4 /* buzzword_list_cell.swift in Sources */,
 				10E37F7029CE00A700D86791 /* coavaMeme.swift in Sources */,
 				10F0A0CF29ED074800531D76 /* sttTestViewController.swift in Sources */,
+				107E7DF52A1334AB001666D1 /* itemCheckViewController.swift in Sources */,
 				102727D129BEFE3400E91167 /* SceneDelegate.swift in Sources */,
 				104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */,
 				1035EAAD29EA9338002B6318 /* STTViewController.swift in Sources */,
@@ -385,7 +410,10 @@
 				1080958329CC4713003A43E4 /* GameOneViewController.swift in Sources */,
 				107D2F2129D3F972003AC0C5 /* ListViewController.swift in Sources */,
 				1080958529CC471E003A43E4 /* GameTwoViewController.swift in Sources */,
+				10B94EE42A0A9C9C00A1913F /* GameOneExplainViewController.swift in Sources */,
+				107E7DF92A13418C001666D1 /* gameCheckViewController.swift in Sources */,
 				109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */,
+				1080F93C2A15A74B0024C309 /* serverConnectViewController.swift in Sources */,
 				10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */,
 				705B6D6429EEC37100288D05 /* ButtonChange.swift in Sources */,
 				10E05B1129E319030016EBF6 /* HatViewController.swift in Sources */,
@@ -553,12 +581,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hong.Coava;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erica.Coava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -585,12 +614,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hong.Coava;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erica.Coava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -82,9 +82,11 @@ class Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
         memeCollectionVIew.delegate = self
         memeCollectionVIew.dataSource = self
         
-        navigationController?.hidesBarsOnSwipe = false
+        //navigationController?.hidesBarsOnSwipe = true
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
-
-
 }

@@ -12,6 +12,7 @@ class ttsTestViewController: UIViewController {
 
     @IBOutlet var textField: UITextField!
     @IBOutlet var button: UIButton!
+    @IBOutlet var text: UILabel!
     
     let synthesizer = AVSpeechSynthesizer()
     
@@ -25,7 +26,7 @@ class ttsTestViewController: UIViewController {
     @IBAction func textToSpeech(_ sender: Any) {
         
         
-        let utterance = AVSpeechUtterance(string: textField.text!)
+        let utterance = AVSpeechUtterance(string: text.text!)
         
         utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         
