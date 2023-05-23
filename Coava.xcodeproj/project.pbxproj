@@ -23,6 +23,10 @@
 		1035EAAD29EA9338002B6318 /* STTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035EAAC29EA9338002B6318 /* STTViewController.swift */; };
 		104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */; };
 		104BCD6029D3AF6E00F587CF /* MemeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */; };
+		107C752A2A1A4F400027084A /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 107C75292A1A4F400027084A /* OpenAISwift */; };
+		107C752C2A1A500D0027084A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C752B2A1A500D0027084A /* APICaller.swift */; };
+		107C752E2A1A53460027084A /* chatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C752D2A1A53460027084A /* chatGPTViewController.swift */; };
+		107C75302A1A6B0C0027084A /* chatGPT2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C752F2A1A6B0C0027084A /* chatGPT2ViewController.swift */; };
 		107D2F2129D3F972003AC0C5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D2F2029D3F972003AC0C5 /* ListViewController.swift */; };
 		107E7DF52A1334AB001666D1 /* itemCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E7DF42A1334AB001666D1 /* itemCheckViewController.swift */; };
 		107E7DF72A133B5C001666D1 /* homeCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E7DF62A133B5C001666D1 /* homeCheckViewController.swift */; };
@@ -77,6 +81,9 @@
 		1035EAAC29EA9338002B6318 /* STTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTViewController.swift; sourceTree = "<group>"; };
 		104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzwordListViewController.swift; sourceTree = "<group>"; };
 		104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeListViewController.swift; sourceTree = "<group>"; };
+		107C752B2A1A500D0027084A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		107C752D2A1A53460027084A /* chatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatGPTViewController.swift; sourceTree = "<group>"; };
+		107C752F2A1A6B0C0027084A /* chatGPT2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatGPT2ViewController.swift; sourceTree = "<group>"; };
 		107D2F2029D3F972003AC0C5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		107E7DF42A1334AB001666D1 /* itemCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCheckViewController.swift; sourceTree = "<group>"; };
 		107E7DF62A133B5C001666D1 /* homeCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCheckViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107C752A2A1A4F400027084A /* OpenAISwift in Frameworks */,
 				DC84B42726928A33E96AB414 /* Pods_Coava.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,8 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				102727CE29BEFE3400E91167 /* AppDelegate.swift */,
+				107C752D2A1A53460027084A /* chatGPTViewController.swift */,
 				102727D029BEFE3400E91167 /* SceneDelegate.swift */,
 				102727D429BEFE3400E91167 /* Main.storyboard */,
+				107C752F2A1A6B0C0027084A /* chatGPT2ViewController.swift */,
+				107C752B2A1A500D0027084A /* APICaller.swift */,
 				10C128D12A1921F40075F484 /* secondTestViewController.swift */,
 				1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */,
 				705B6D6329EEC37100288D05 /* ButtonChange.swift */,
@@ -282,6 +293,9 @@
 			dependencies = (
 			);
 			name = Coava;
+			packageProductDependencies = (
+				107C75292A1A4F400027084A /* OpenAISwift */,
+			);
 			productName = Coava;
 			productReference = 102727CB29BEFE3400E91167 /* Coava.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 102727C229BEFE3400E91167;
+			packageReferences = (
+				107C75282A1A4F400027084A /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 102727CC29BEFE3400E91167 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,8 +407,11 @@
 				10C128D22A1921F40075F484 /* secondTestViewController.swift in Sources */,
 				101C3BDF29C95995003EB20E /* CustomTabBarController.swift in Sources */,
 				10B22A2F29CD8D6200754373 /* coavaBuzzword.swift in Sources */,
+				107C75302A1A6B0C0027084A /* chatGPT2ViewController.swift in Sources */,
 				101C3BE129C95B9F003EB20E /* Tabbar.swift in Sources */,
 				10FB3D8329E641C1008D86D3 /* UserHairViewController.swift in Sources */,
+				107C752C2A1A500D0027084A /* APICaller.swift in Sources */,
+				107C752E2A1A53460027084A /* chatGPTViewController.swift in Sources */,
 				1013EDDF29EA7D66006EE2D4 /* coavaMemeList.swift in Sources */,
 				10B22A3129CD92BF00754373 /* Home.swift in Sources */,
 				10E05B1929E31A2E0016EBF6 /* HairViewController.swift in Sources */,
@@ -650,6 +670,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		107C75282A1A4F400027084A /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		107C75292A1A4F400027084A /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 107C75282A1A4F400027084A /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 102727C329BEFE3400E91167 /* Project object */;
 }
