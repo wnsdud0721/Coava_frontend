@@ -130,12 +130,10 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     func textToSpeech() {
-        
         let utterance = AVSpeechUtterance(string: responseTextField.text!)
         utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.rate = 0.4
         synthesizer.speak(utterance)
-        
     }
     
     func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
