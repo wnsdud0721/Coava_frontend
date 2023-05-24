@@ -19,21 +19,7 @@ class secondTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let url = URL(string: "http://swiftapi.rubypaper.co.kr:2029/practice/echo")
-//        let param: Parameters = [
-//            "userId": "Hong gil dong",
-//            "name": "홍길동"
-//        ]
-//        let alamo = Alamofire.request(url!, method: .post, parameters: param, encode: URLEncoding.httpBody)
-//
-//        alamo.responseJSON() { response in
-//            print("JSON_Alamo=\(response.result.value!)")
-//            if let jsonObject = response.result.value as? [String:Any]{
-//                print("userId = \(jsonObject["userId"]!)")
-//                print("name = \(jsonObject["name"]!)")
-//            }
-//        }
+    
     }
     
     @IBAction func callCurrentTime(_ sender: Any) {

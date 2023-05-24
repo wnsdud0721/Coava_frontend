@@ -20,12 +20,20 @@ class GameOneViewController: UIViewController {
     }
     
     @IBAction func moveGameOneExplain(_ sender: Any) {
-        guard let moveLoginPage = self.storyboard?.instantiateViewController(withIdentifier: "GameOneExplainViewController") as? GameOneExplainViewController else {
+        guard let moveExplainPage = self.storyboard?.instantiateViewController(withIdentifier: "GameOneExplainViewController") as? GameOneExplainViewController else {
             return
         }
-        moveLoginPage.modalTransitionStyle = .crossDissolve
-        moveLoginPage.modalPresentationStyle = .fullScreen
-        self.present(moveLoginPage, animated: true)
+        moveExplainPage.modalTransitionStyle = .crossDissolve
+        moveExplainPage.modalPresentationStyle = .fullScreen
+        self.present(moveExplainPage, animated: true)
     }
 
+    @IBAction func moveGameScene(_ sender: Any) {
+        guard let moveGamePage = self.storyboard?.instantiateViewController(withIdentifier: "GameOneSceneViewController") as? GameOneSceneViewController else {
+            return
+        }
+        moveGamePage.modalTransitionStyle = .crossDissolve
+        moveGamePage.modalPresentationStyle = .fullScreen
+        self.present(moveGamePage, animated: true)
+    }
 }
