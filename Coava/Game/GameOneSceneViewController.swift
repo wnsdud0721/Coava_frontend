@@ -10,7 +10,7 @@ import Alamofire
 import Speech
 import AVFoundation
 
-class serverConnectViewController: UIViewController, SFSpeechRecognizerDelegate {
+class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "ko-KR"))
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -34,17 +34,21 @@ class serverConnectViewController: UIViewController, SFSpeechRecognizerDelegate 
     let apiKey = "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"
     let baseURL = "https://api.openai.com/v1/completions"
     
+    @IBAction func moveGameOne(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
+    
     @IBAction func post(_ sender: Any) {
         
         if audioEngine.isRunning { // 현재 음성인식이 수행중이라면
             audioEngine.stop() // 오디오 입력을 중단한다.
             recognitionRequest?.endAudio() // 음성인식 역시 중단
             post.isEnabled = false
-            post.setTitle("말하기!", for: .normal)
+            post.setImage(UIImage(named: "Group 21"), for: .normal)
         }
         else {
             startRecording()
-            post.setTitle("말하기 멈추기", for: .normal)
+            post.setImage(UIImage(named: "Group 215"), for: .normal)
         }
         
         guard let question = questionTextField.text, !question.isEmpty else {

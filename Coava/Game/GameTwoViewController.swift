@@ -28,4 +28,6 @@ class GameTwoViewController: UIViewController {
         self.present(moveLoginPage, animated: true)
     }
 
+    @IBAction func moveGameScene(_ sender: Any) {
+    }
 }

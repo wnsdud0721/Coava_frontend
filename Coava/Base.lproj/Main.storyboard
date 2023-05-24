@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xai-oR-Wdo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rDw-ra-Sbu">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="-2631.1999999999998" y="2279.5566502463057"/>
         </scene>
-        <!--Server Connect View Controller-->
+        <!--Game One Scene View Controller-->
         <scene sceneID="X5U-o1-sc2">
             <objects>
-                <viewController storyboardIdentifier="serverConnectViewController" id="xai-oR-Wdo" customClass="serverConnectViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOneSceneViewController" id="xai-oR-Wdo" customClass="GameOneSceneViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VZW-Xe-i5o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,22 +142,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq3-SA-0Yy">
-                                <rect key="frame" x="248" y="203" width="58" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game1_scene" translatesAutoresizingMaskIntoConstraints="NO" id="atK-Vo-OGN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Post"/>
-                                <connections>
-                                    <action selector="post:" destination="xai-oR-Wdo" eventType="touchUpInside" id="gYC-dg-C1H"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgk-vE-vX8">
-                                <rect key="frame" x="248" y="202" width="58" height="35"/>
+                                <rect key="frame" x="67" y="478" width="240" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Post"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Group 21"/>
                                 <connections>
                                     <action selector="post:" destination="xai-oR-Wdo" eventType="touchUpInside" id="OHx-Jo-2rX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3In-2r-Fm9">
+                                <rect key="frame" x="110" y="576" width="154" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Group 219"/>
+                                <connections>
+                                    <action selector="moveGameOne:" destination="xai-oR-Wdo" eventType="touchUpInside" id="mjH-9z-H97"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCb-nT-kvx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2631.1999999999998" y="3025.6371814092954"/>
+            <point key="canvasLocation" x="2359" y="4478"/>
         </scene>
         <!--Second Test View Controller-->
         <scene sceneID="qqZ-ki-wXo">
@@ -1541,6 +1545,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="game_1_startBtn"/>
+                                <connections>
+                                    <action selector="moveGameScene:" destination="fDe-ol-cb4" eventType="touchUpInside" id="qid-vX-ElF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bgv-2u-xTM"/>
@@ -1699,6 +1706,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="game_1_startBtn"/>
+                                <connections>
+                                    <action selector="moveGameScene:" destination="5Xx-HQ-zSD" eventType="touchUpInside" id="VOn-Oa-gSg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcT-sd-yDX">
                                 <rect key="frame" x="16" y="546" width="154" height="56"/>
@@ -2400,6 +2410,39 @@
             </objects>
             <point key="canvasLocation" x="1641" y="3761"/>
         </scene>
+        <!--Game Two Scene View Controller-->
+        <scene sceneID="kaR-Z6-mTX">
+            <objects>
+                <viewController storyboardIdentifier="GameTwoSceneViewController" id="EFi-hX-scd" customClass="GameTwoSceneViewController" customModule="Coava" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2M-Si-tSP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game2_scene" translatesAutoresizingMaskIntoConstraints="NO" id="6tK-qc-Svb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86f-CA-bNn">
+                                <rect key="frame" x="67" y="478" width="240" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Group 21"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-4f-CtK">
+                                <rect key="frame" x="110" y="576" width="154" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Group 219"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kg8-Et-J0v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41Q-6a-cjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="3761.4692653673164"/>
+        </scene>
         <!--Item Check View Controller-->
         <scene sceneID="S13-n5-l1w">
             <objects>
@@ -2936,17 +2979,21 @@
         <image name="7" width="8" height="11"/>
         <image name="8" width="9" height="13"/>
         <image name="9" width="9" height="13"/>
+        <image name="Game1_scene" width="375" height="667"/>
+        <image name="Game2_scene" width="375" height="667"/>
         <image name="Game_basic" width="24" height="24"/>
         <image name="Game_explain" width="375" height="667"/>
         <image name="Game_explain2" width="375" height="667"/>
         <image name="Game_select" width="24" height="24"/>
         <image name="Game_아바타와 자유대화" width="750" height="1334"/>
         <image name="Game_아바타와 자유대화2" width="375" height="667"/>
+        <image name="Group 21" width="240" height="71"/>
         <image name="Group 216" width="228" height="36"/>
         <image name="Group 217" width="375" height="576"/>
+        <image name="Group 219" width="154" height="56"/>
         <image name="Group 222" width="338" height="181"/>
         <image name="Group 223" width="340" height="181"/>
-        <image name="Group 224" width="375" height="623"/>
+        <image name="Group 224" width="750" height="1204"/>
         <image name="Group 236" width="34" height="34"/>
         <image name="Group 238" width="34" height="34"/>
         <image name="Group 246" width="375" height="140"/>

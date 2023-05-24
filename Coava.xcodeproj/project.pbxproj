@@ -23,6 +23,7 @@
 		1035EAAD29EA9338002B6318 /* STTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1035EAAC29EA9338002B6318 /* STTViewController.swift */; };
 		104BCD5E29D3AF6700F587CF /* BuzzwordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */; };
 		104BCD6029D3AF6E00F587CF /* MemeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */; };
+		106CBDC62A1DD4C000CC1A04 /* GameTwoSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106CBDC52A1DD4C000CC1A04 /* GameTwoSceneViewController.swift */; };
 		107C752A2A1A4F400027084A /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 107C75292A1A4F400027084A /* OpenAISwift */; };
 		107C752C2A1A500D0027084A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C752B2A1A500D0027084A /* APICaller.swift */; };
 		107C752E2A1A53460027084A /* chatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C752D2A1A53460027084A /* chatGPTViewController.swift */; };
@@ -34,7 +35,7 @@
 		1080958129CC4705003A43E4 /* GameTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080958029CC4705003A43E4 /* GameTabViewController.swift */; };
 		1080958329CC4713003A43E4 /* GameOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080958229CC4713003A43E4 /* GameOneViewController.swift */; };
 		1080958529CC471E003A43E4 /* GameTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080958429CC471E003A43E4 /* GameTwoViewController.swift */; };
-		1080F93C2A15A74B0024C309 /* serverConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */; };
+		1080F93C2A15A74B0024C309 /* GameOneSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080F93B2A15A74B0024C309 /* GameOneSceneViewController.swift */; };
 		1083B30E29EE35E900BBBA87 /* UserFixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083B30D29EE35E900BBBA87 /* UserFixViewController.swift */; };
 		109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */; };
 		10B22A2D29CD8D4A00754373 /* buzzword_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */; };
@@ -81,6 +82,7 @@
 		1035EAAC29EA9338002B6318 /* STTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTViewController.swift; sourceTree = "<group>"; };
 		104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzwordListViewController.swift; sourceTree = "<group>"; };
 		104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeListViewController.swift; sourceTree = "<group>"; };
+		106CBDC52A1DD4C000CC1A04 /* GameTwoSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwoSceneViewController.swift; sourceTree = "<group>"; };
 		107C752B2A1A500D0027084A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		107C752D2A1A53460027084A /* chatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatGPTViewController.swift; sourceTree = "<group>"; };
 		107C752F2A1A6B0C0027084A /* chatGPT2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatGPT2ViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		1080958029CC4705003A43E4 /* GameTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabViewController.swift; sourceTree = "<group>"; };
 		1080958229CC4713003A43E4 /* GameOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOneViewController.swift; sourceTree = "<group>"; };
 		1080958429CC471E003A43E4 /* GameTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwoViewController.swift; sourceTree = "<group>"; };
-		1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serverConnectViewController.swift; sourceTree = "<group>"; };
+		1080F93B2A15A74B0024C309 /* GameOneSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOneSceneViewController.swift; sourceTree = "<group>"; };
 		1083B30D29EE35E900BBBA87 /* UserFixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserFixViewController.swift; path = Coava/UserFixViewController.swift; sourceTree = SOURCE_ROOT; };
 		109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
 		10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buzzword_cell.swift; sourceTree = "<group>"; };
@@ -162,7 +164,6 @@
 				107C752F2A1A6B0C0027084A /* chatGPT2ViewController.swift */,
 				107C752B2A1A500D0027084A /* APICaller.swift */,
 				10C128D12A1921F40075F484 /* secondTestViewController.swift */,
-				1080F93B2A15A74B0024C309 /* serverConnectViewController.swift */,
 				705B6D6329EEC37100288D05 /* ButtonChange.swift */,
 				10F0A0D029ED0D4D00531D76 /* ttsTestViewController.swift */,
 				10F0A0CE29ED074800531D76 /* sttTestViewController.swift */,
@@ -205,8 +206,10 @@
 				1080958029CC4705003A43E4 /* GameTabViewController.swift */,
 				1080958229CC4713003A43E4 /* GameOneViewController.swift */,
 				10B94EE32A0A9C9C00A1913F /* GameOneExplainViewController.swift */,
+				1080F93B2A15A74B0024C309 /* GameOneSceneViewController.swift */,
 				1080958429CC471E003A43E4 /* GameTwoViewController.swift */,
 				10B94EE72A0A9CFC00A1913F /* GameTwoExplainViewController.swift */,
+				106CBDC52A1DD4C000CC1A04 /* GameTwoSceneViewController.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				10E05B0F29E318520016EBF6 /* StoreViewController.swift in Sources */,
 				1013EDDD29EA7D4C006EE2D4 /* buzzword_list_cell.swift in Sources */,
 				10E37F7029CE00A700D86791 /* coavaMeme.swift in Sources */,
+				106CBDC62A1DD4C000CC1A04 /* GameTwoSceneViewController.swift in Sources */,
 				10F0A0CF29ED074800531D76 /* sttTestViewController.swift in Sources */,
 				107E7DF52A1334AB001666D1 /* itemCheckViewController.swift in Sources */,
 				102727D129BEFE3400E91167 /* SceneDelegate.swift in Sources */,
@@ -433,7 +437,7 @@
 				10B94EE42A0A9C9C00A1913F /* GameOneExplainViewController.swift in Sources */,
 				107E7DF92A13418C001666D1 /* gameCheckViewController.swift in Sources */,
 				109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */,
-				1080F93C2A15A74B0024C309 /* serverConnectViewController.swift in Sources */,
+				1080F93C2A15A74B0024C309 /* GameOneSceneViewController.swift in Sources */,
 				10FB3D8129E641B6008D86D3 /* UserGlassesViewController.swift in Sources */,
 				705B6D6429EEC37100288D05 /* ButtonChange.swift in Sources */,
 				10E05B1129E319030016EBF6 /* HatViewController.swift in Sources */,
