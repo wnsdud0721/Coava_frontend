@@ -50,7 +50,7 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
         
         guard let question = userTextField.text, !question.isEmpty else {
-            avatarTextField.text = "Please enter a question."
+            //avatarTextField.text = "Please enter a question."
             return
         }
                 

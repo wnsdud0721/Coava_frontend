@@ -31,7 +31,7 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     let synthesizer = AVSpeechSynthesizer()
     
-    let apiKey = "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"
+    let apiKey = "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"
     let baseURL = "https://api.openai.com/v1/completions"
     
     @IBAction func moveGameOne(_ sender: Any) {
