@@ -10,6 +10,14 @@ import Alamofire
 import Speech
 import AVFoundation
 
+struct ChatResponse: Decodable {
+    let choices: [Choice]
+}
+
+struct Choice: Decodable {
+    let text: String
+}
+
 class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "ko-KR"))
@@ -31,7 +39,7 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     let synthesizer = AVSpeechSynthesizer()
     
-    let apiKey = "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"
+    let apiKey = "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"
     let baseURL = "https://api.openai.com/v1/completions"
     
     @IBAction func moveGameOne(_ sender: Any) {
@@ -136,39 +144,64 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         synthesizer.speak(utterance)
     }
     
+//    func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
+//        guard let url = URL(string: baseURL) else {
+//            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"]))
+//            return
+//        }
+//
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//
+//        let parameters = ["model": "text-davinci-003", "prompt": prompt, "max_tokens": 250, "temperature": 0.7] as [String : Any]
+//        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+//
+//        let session = URLSession.shared
+//        let task = session.dataTask(with: request) { (data, response, error) in
+//            if let error = error {
+//                completionHandler(nil, error)
+//                return
+//            }
+//
+//            if let data = data {
+//                if let jsonObject = try? JSONSerialization.jsonObject(with: data, options: []),
+//                   let jsonDict = jsonObject as? [String: Any],
+//                   let choices = jsonDict["choices"] as? [[String: Any]],
+//                   let text = choices.first?["text"] as? String {
+//                    completionHandler(text, nil)
+//                    return
+//                }
+//            }
+//            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
+//        }
+//        task.resume()
+//    }
+    
     func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
-        guard let url = URL(string: baseURL) else {
-            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"]))
-            return
-        }
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        let parameters = ["model": "text-davinci-003", "prompt": prompt, "max_tokens": 250, "temperature": 0.7] as [String : Any]
-        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
-        
-        let session = URLSession.shared
-        let task = session.dataTask(with: request) { (data, response, error) in
-            if let error = error {
-                completionHandler(nil, error)
-                return
-            }
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(apiKey)"]
+        let parameters: Parameters = [
+            "model": "text-davinci-003",
+            "prompt": prompt,
+            "max_tokens": 250,
+            "temperature": 0.7
+        ]
             
-            if let data = data {
-                if let jsonObject = try? JSONSerialization.jsonObject(with: data, options: []),
-                   let jsonDict = jsonObject as? [String: Any],
-                   let choices = jsonDict["choices"] as? [[String: Any]],
-                   let text = choices.first?["text"] as? String {
-                    completionHandler(text, nil)
-                    return
+        AF.request(baseURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            .validate()
+            .responseDecodable(of: ChatResponse.self) { response in
+                switch response.result {
+                case .success(let chatResponse):
+                    if let text = chatResponse.choices.first?.text {
+                        completionHandler(text, nil)
+                        return
+                    }
+                case .failure(let error):
+                    completionHandler(nil, error)
                 }
+                
             }
-            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
-        }
-        task.resume()
     }
 }
 
