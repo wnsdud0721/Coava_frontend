@@ -201,7 +201,7 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
                     completionHandler(nil, error)
                 }
                 
-            }
+        }
     }
 }
 

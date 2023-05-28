@@ -69,6 +69,7 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
                 if let error = error {
                     self.avatarTextField.text = "Error: \(error)"
                 } else if let response = response {
+                    /*수정 부분 response.word or response*/
                     self.avatarTextField.text = response.word
                     self.userTextField.text = nil
                     self.textToSpeech()
@@ -198,8 +199,8 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
                     completionHandler(nil, error)
                 }
 
-                completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
-            }
+//                completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
         }
+    }
     
 }

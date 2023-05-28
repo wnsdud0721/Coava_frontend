@@ -20,6 +20,10 @@ class MemeListViewController: UIViewController, UICollectionViewDelegate, UIColl
         meme_list_cell.coavaMemeListImg.layer.borderWidth = 0.5
         meme_list_cell.coavaMemeListImg.layer.cornerRadius = 10
         
+        meme_list_cell.searchButton.superview?.tag = indexPath.section
+        meme_list_cell.searchButton.tag = indexPath.row
+        meme_list_cell.searchButton.addTarget(self, action: #selector(self.searchAction), for: .touchUpInside)
+        
         return meme_list_cell
     }
     
@@ -32,5 +36,22 @@ class MemeListViewController: UIViewController, UICollectionViewDelegate, UIColl
         memeListCollectionView.dataSource = self
     }
     
-
+    @IBAction func searchAction(_ sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: sender.superview?.tag ?? 0)
+            let cell = memeListCollectionView.cellForItem(at: indexPath) as! meme_list_cell
+            let text = cell.coavaMemeListTitle.text ?? ""
+            
+            if let navigationController = self.navigationController {
+                if !(navigationController.topViewController?.description.contains("MemeWebViewController"))! {
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let viewController = storyBoard.instantiateViewController(withIdentifier: "MemeWebViewController") as! MemeWebViewController
+                    
+                    viewController.search = text
+                    viewController.url = "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&"
+                    
+                    navigationController.pushViewController(viewController, animated: true)
+                }
+            }
+    }
+    
 }
