@@ -143,7 +143,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game1_scene" translatesAutoresizingMaskIntoConstraints="NO" id="atK-Vo-OGN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameOne_background" translatesAutoresizingMaskIntoConstraints="NO" id="atK-Vo-OGN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -165,11 +165,16 @@
                                     <action selector="moveGameOne:" destination="xai-oR-Wdo" eventType="touchUpInside" id="mjH-9z-H97"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gameOne_avatar_listen" translatesAutoresizingMaskIntoConstraints="NO" id="9j0-7Y-HJu">
+                                <rect key="frame" x="53" y="198" width="269" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6ks-n3-hGy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="avatarImage" destination="9j0-7Y-HJu" id="0G2-iE-NuL"/>
                         <outlet property="post" destination="wgk-vE-vX8" id="A3K-8U-O5I"/>
                         <outlet property="questionTextField" destination="beI-Ht-c4n" id="q6A-hI-5r5"/>
                         <outlet property="responseTextField" destination="doN-nZ-y8i" id="kHM-MV-sW9"/>
@@ -1389,7 +1394,7 @@
         <scene sceneID="1LX-VE-X4M">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PyR-vV-tML" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Home_basic" selectedImage="Home_select" id="kbo-4Y-yBv"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home2_basic" selectedImage="Home2_select" id="kbo-4Y-yBv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="24y-9l-59E">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1832,7 +1837,7 @@
         <scene sceneID="bul-8F-3cX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FY5-Va-cB3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Game_basic" selectedImage="Game_select" id="Oc5-yQ-NYL"/>
+                    <tabBarItem key="tabBarItem" title="" image="Game3_basic" selectedImage="Game3_select" id="Oc5-yQ-NYL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eg2-vf-Nwm">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -2125,7 +2130,7 @@
         <scene sceneID="ls2-jO-fbn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kkr-Lf-4WA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Store_basic" selectedImage="Store_select" id="Bbb-Mh-QJQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="Store3_basic" selectedImage="Store3_select" id="Bbb-Mh-QJQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qlu-nM-Ozu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -2453,6 +2458,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="31"/>
+                                <connections>
+                                    <action selector="ButtonClick3:" destination="9Uv-Bh-R2j" eventType="touchUpInside" id="AZq-rz-8ZU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px4-ep-VZd">
                                 <rect key="frame" x="300" y="200" width="29" height="22"/>
@@ -2507,6 +2515,7 @@
                         <outlet property="ClickChange" destination="xLi-Mx-4A5" id="6Cx-Qq-0ED"/>
                         <outlet property="ClickChange1" destination="4MB-1g-wa8" id="Bdy-Z5-DWo"/>
                         <outlet property="ClickChange2" destination="xNH-gQ-gMa" id="fI5-r0-TbW"/>
+                        <outlet property="ClickChange3" destination="2ff-gd-ewO" id="9a7-Sa-7nJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iw6-bc-tkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2557,7 +2566,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game2_scene" translatesAutoresizingMaskIntoConstraints="NO" id="6tK-qc-Svb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameTwo_background" translatesAutoresizingMaskIntoConstraints="NO" id="6tK-qc-Svb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -2580,16 +2589,21 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UA1-r7-3J2">
-                                <rect key="frame" x="67" y="428" width="240" height="34"/>
+                                <rect key="frame" x="67" y="433" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gameTwo_avatar_listen" translatesAutoresizingMaskIntoConstraints="NO" id="C4u-Fr-gx7">
+                                <rect key="frame" x="43" y="177" width="288" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kg8-Et-J0v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="avatarImage" destination="C4u-Fr-gx7" id="SP5-ub-YgG"/>
                         <outlet property="avatarTextField" destination="UA1-r7-3J2" id="vXJ-ae-C4l"/>
                         <outlet property="post" destination="86f-CA-bNn" id="QdZ-O2-Vft"/>
                         <outlet property="userTextField" destination="tE0-Jl-rjf" id="SiX-Wi-xZG"/>
@@ -2769,6 +2783,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="31"/>
+                                <connections>
+                                    <action selector="ButtonClick3:" destination="ZgV-SZ-82E" eventType="touchUpInside" id="rIZ-0S-kFS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koe-uK-jab">
                                 <rect key="frame" x="300" y="200" width="29" height="22"/>
@@ -2823,6 +2840,7 @@
                         <outlet property="ClickChange" destination="oEP-vx-vKI" id="HmE-fC-kd3"/>
                         <outlet property="ClickChange1" destination="fpb-xm-zcA" id="U0Z-Jq-A4R"/>
                         <outlet property="ClickChange2" destination="xBG-T0-3Mf" id="RiL-pY-djh"/>
+                        <outlet property="ClickChange3" destination="Yfe-KT-1dW" id="tZg-7o-nsx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VW0-07-9yG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2999,6 +3017,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="31"/>
+                                <connections>
+                                    <action selector="ButtonClick3:" destination="zr4-Y0-6gw" eventType="touchUpInside" id="ZbH-Bn-Rma"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E6-ue-j3h">
                                 <rect key="frame" x="301" y="200" width="29" height="22"/>
@@ -3053,6 +3074,7 @@
                         <outlet property="ClickChange" destination="Ch9-xa-ydf" id="BgV-MX-PtS"/>
                         <outlet property="ClickChange1" destination="Pgq-cg-8E8" id="1rN-fs-Lsn"/>
                         <outlet property="ClickChange2" destination="T9l-3H-s0F" id="fTH-x2-24P"/>
+                        <outlet property="ClickChange3" destination="2iN-EB-FJr" id="KQf-f3-Klc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyF-Wz-c4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3172,12 +3194,12 @@
         <image name="7" width="8" height="11"/>
         <image name="8" width="9" height="13"/>
         <image name="9" width="9" height="13"/>
-        <image name="Game1_scene" width="375" height="667"/>
-        <image name="Game2_scene" width="375" height="667"/>
-        <image name="Game_basic" width="24" height="24"/>
+        <image name="Game3_basic" width="24" height="24"/>
+        <image name="Game3_select" width="24" height="24"/>
+        <image name="GameOne_background" width="375" height="667"/>
+        <image name="GameTwo_background" width="1125" height="2001"/>
         <image name="Game_explain" width="375" height="667"/>
         <image name="Game_explain2" width="375" height="667"/>
-        <image name="Game_select" width="24" height="24"/>
         <image name="Game_아바타와 자유대화" width="750" height="1334"/>
         <image name="Game_아바타와 자유대화2" width="375" height="667"/>
         <image name="Group 21" width="240" height="71"/>
@@ -3186,7 +3208,7 @@
         <image name="Group 219" width="154" height="56"/>
         <image name="Group 222" width="338" height="181"/>
         <image name="Group 223" width="340" height="181"/>
-        <image name="Group 224" width="375" height="623"/>
+        <image name="Group 224" width="750" height="1204"/>
         <image name="Group 236" width="34" height="34"/>
         <image name="Group 238" width="34" height="34"/>
         <image name="Group 246" width="375" height="140"/>
@@ -3196,15 +3218,15 @@
         <image name="Group 250" width="52" height="20"/>
         <image name="Group 251" width="52" height="20"/>
         <image name="Group 252" width="52" height="20"/>
-        <image name="Home_basic" width="24" height="24"/>
-        <image name="Home_select" width="24" height="24"/>
+        <image name="Home2_basic" width="24" height="24"/>
+        <image name="Home2_select" width="24" height="24"/>
         <image name="IMG_7521 2" width="125" height="120"/>
         <image name="IMG_7522 2" width="125" height="120"/>
         <image name="IMG_7523 2" width="102" height="120"/>
         <image name="Meme_basic" width="24" height="24"/>
         <image name="Meme_select" width="24" height="24"/>
-        <image name="Store_basic" width="24" height="24"/>
-        <image name="Store_select" width="24" height="24"/>
+        <image name="Store3_basic" width="24" height="24"/>
+        <image name="Store3_select" width="24" height="24"/>
         <image name="Toolbar1" width="750" height="186"/>
         <image name="User_basic" width="24" height="24"/>
         <image name="User_select" width="24" height="24"/>
@@ -3216,6 +3238,8 @@
         <image name="danaka" width="496" height="291"/>
         <image name="detail_back" width="102" height="36"/>
         <image name="email_login" width="520" height="88"/>
+        <image name="gameOne_avatar_listen" width="269" height="249"/>
+        <image name="gameTwo_avatar_listen" width="288" height="243"/>
         <image name="game_1_exit" width="154" height="56"/>
         <image name="game_1_explain" width="154" height="56"/>
         <image name="game_1_startBtn" width="240" height="71"/>

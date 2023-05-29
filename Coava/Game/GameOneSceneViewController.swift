@@ -30,12 +30,20 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
 
         // Do any additional setup after loading the view.
         speechRecognizer?.delegate = self
+        
+        buttonClick = UIImage(named: "gameOne_avatar_listen")
+        buttonUnClick = UIImage(named: "gameOne_avatar_talking")
     }
     
 
     @IBOutlet var questionTextField: UITextField!
     @IBOutlet var responseTextField: UITextField!
     @IBOutlet var post: UIButton!
+    @IBOutlet var avatarImage: UIImageView!
+    
+    var isActive = false
+    var buttonClick: UIImage?
+    var buttonUnClick: UIImage?
     
     let synthesizer = AVSpeechSynthesizer()
     
@@ -44,9 +52,20 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     @IBAction func moveGameOne(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
+        
     }
     
     @IBAction func post(_ sender: Any) {
+        
+        if isActive {
+            isActive = false
+            avatarImage.image = buttonUnClick
+        }
+        
+        else{
+            isActive = true
+            avatarImage.image = buttonClick
+        }
         
         if audioEngine.isRunning { // 현재 음성인식이 수행중이라면
             audioEngine.stop() // 오디오 입력을 중단한다.
