@@ -29,5 +29,11 @@ class GameTwoViewController: UIViewController {
     }
 
     @IBAction func moveGameScene(_ sender: Any) {
+        guard let moveGamePage = self.storyboard?.instantiateViewController(withIdentifier: "GameTwoSceneViewController") as? GameTwoSceneViewController else {
+            return
+        }
+        moveGamePage.modalTransitionStyle = .crossDissolve
+        moveGamePage.modalPresentationStyle = .fullScreen
+        self.present(moveGamePage, animated: true)
     }
 }

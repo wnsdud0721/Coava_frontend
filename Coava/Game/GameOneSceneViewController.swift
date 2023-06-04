@@ -31,7 +31,7 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     let synthesizer = AVSpeechSynthesizer()
     
-    let apiKey = "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"
+    let apiKey = "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"
     let baseURL = "https://api.openai.com/v1/completions"
     
     @IBAction func moveGameOne(_ sender: Any) {
@@ -130,12 +130,10 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     func textToSpeech() {
-        
         let utterance = AVSpeechUtterance(string: responseTextField.text!)
         utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.rate = 0.4
         synthesizer.speak(utterance)
-        
     }
     
     func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
