@@ -33,6 +33,14 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         buttonClick = UIImage(named: "gameTwo_avatar_listen")
         buttonUnClick = UIImage(named: "gameTwo_avatar_talking")
+        
+        do {
+            try audioSession.setActive(true)
+            try audioSession.setCategory(.playback, mode: .default)
+        } catch {
+            print("Failed to set audio session category.")
+        }
+        
     }
 
     @IBOutlet var userTextField: UITextField!
@@ -44,9 +52,13 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     var buttonClick: UIImage?
     var buttonUnClick: UIImage?
     
+    var fixTTS = 1
+    
     let synthesizer = AVSpeechSynthesizer()
+    let audioSession = AVAudioSession.sharedInstance()
     
     let baseURL = "http://34.64.40.221:8000/api/word/"
+    
     
     
     @IBAction func moveGameTwo(_ sender: Any) {
@@ -63,6 +75,7 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         else{
             isActive = true
             avatarImage.image = buttonClick
+            //avatarTextField.text = nil
         }
         
         if audioEngine.isRunning { // 현재 음성인식이 수행중이라면
@@ -95,6 +108,7 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
                 }
             }
         }
+        
         
     }
     
@@ -217,8 +231,6 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
                 case .failure(let error):
                     completionHandler(nil, error)
                 }
-
-//                completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
         }
     }
     

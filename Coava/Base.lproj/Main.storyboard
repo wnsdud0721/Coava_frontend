@@ -613,7 +613,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="124-PR-EWp">
-                                <rect key="frame" x="290" y="126" width="37" height="17"/>
+                                <rect key="frame" x="288" y="126" width="37" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="VFi-0C-Yqr"/>
                                 </constraints>
@@ -621,8 +621,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbK-5s-yNs">
-                                <rect key="frame" x="328" y="126" width="31" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbK-5s-yNs">
+                                <rect key="frame" x="326" y="126" width="33" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="ZUL-gy-wL1"/>
                                 </constraints>
@@ -1479,7 +1479,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-ls-knJ">
-                                <rect key="frame" x="290" y="126" width="37" height="17"/>
+                                <rect key="frame" x="288" y="126" width="37" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="uxh-0T-tw9"/>
                                 </constraints>
@@ -1487,8 +1487,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl6-hv-WYK">
-                                <rect key="frame" x="328" y="126" width="31" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl6-hv-WYK">
+                                <rect key="frame" x="326" y="126" width="33" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="Xmm-an-XSB"/>
                                 </constraints>
@@ -1889,7 +1889,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdX-FX-9QI">
-                                <rect key="frame" x="290" y="126" width="37" height="17"/>
+                                <rect key="frame" x="288" y="126" width="37" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="MQX-2Q-mWs"/>
                                 </constraints>
@@ -1897,8 +1897,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d88-FA-7CW">
-                                <rect key="frame" x="328" y="126" width="31" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d88-FA-7CW">
+                                <rect key="frame" x="326" y="126" width="33" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="JcN-77-dwl"/>
                                 </constraints>
@@ -3208,7 +3208,7 @@
         <image name="Group 219" width="154" height="56"/>
         <image name="Group 222" width="338" height="181"/>
         <image name="Group 223" width="340" height="181"/>
-        <image name="Group 224" width="750" height="1204"/>
+        <image name="Group 224" width="375" height="623"/>
         <image name="Group 236" width="34" height="34"/>
         <image name="Group 238" width="34" height="34"/>
         <image name="Group 246" width="375" height="140"/>

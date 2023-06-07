@@ -160,6 +160,7 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         let utterance = AVSpeechUtterance(string: responseTextField.text!)
         utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.rate = 0.4
+        utterance.pitchMultiplier = 0.5
         synthesizer.speak(utterance)
     }
     
