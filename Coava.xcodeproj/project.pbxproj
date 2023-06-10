@@ -38,6 +38,11 @@
 		1080F93C2A15A74B0024C309 /* GameOneSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080F93B2A15A74B0024C309 /* GameOneSceneViewController.swift */; };
 		1083B30E29EE35E900BBBA87 /* UserFixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083B30D29EE35E900BBBA87 /* UserFixViewController.swift */; };
 		109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */; };
+		10ADCC422A238DD900DD71B0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ADCC412A238DD900DD71B0 /* WebKit.framework */; };
+		10ADCC442A23927300DD71B0 /* BuzzwordWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ADCC432A23927300DD71B0 /* BuzzwordWebViewController.swift */; };
+		10ADCC462A2392B300DD71B0 /* MemeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ADCC452A2392B300DD71B0 /* MemeWebViewController.swift */; };
+		10ADCC482A23D05500DD71B0 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ADCC472A23D05500DD71B0 /* firstViewController.swift */; };
+		10ADCC4A2A23D06800DD71B0 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ADCC492A23D06800DD71B0 /* secondViewController.swift */; };
 		10B22A2D29CD8D4A00754373 /* buzzword_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */; };
 		10B22A2F29CD8D6200754373 /* coavaBuzzword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A2E29CD8D6200754373 /* coavaBuzzword.swift */; };
 		10B22A3129CD92BF00754373 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B22A3029CD92BF00754373 /* Home.swift */; };
@@ -96,6 +101,11 @@
 		1080F93B2A15A74B0024C309 /* GameOneSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOneSceneViewController.swift; sourceTree = "<group>"; };
 		1083B30D29EE35E900BBBA87 /* UserFixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserFixViewController.swift; path = Coava/UserFixViewController.swift; sourceTree = SOURCE_ROOT; };
 		109C9A7829D2BE7A00DA0380 /* ExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
+		10ADCC412A238DD900DD71B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		10ADCC432A23927300DD71B0 /* BuzzwordWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzwordWebViewController.swift; sourceTree = "<group>"; };
+		10ADCC452A2392B300DD71B0 /* MemeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeWebViewController.swift; sourceTree = "<group>"; };
+		10ADCC472A23D05500DD71B0 /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		10ADCC492A23D06800DD71B0 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		10B22A2C29CD8D4A00754373 /* buzzword_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buzzword_cell.swift; sourceTree = "<group>"; };
 		10B22A2E29CD8D6200754373 /* coavaBuzzword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coavaBuzzword.swift; sourceTree = "<group>"; };
 		10B22A3029CD92BF00754373 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10ADCC422A238DD900DD71B0 /* WebKit.framework in Frameworks */,
 				107C752A2A1A4F400027084A /* OpenAISwift in Frameworks */,
 				DC84B42726928A33E96AB414 /* Pods_Coava.framework in Frameworks */,
 			);
@@ -161,6 +172,8 @@
 				107C752D2A1A53460027084A /* chatGPTViewController.swift */,
 				102727D029BEFE3400E91167 /* SceneDelegate.swift */,
 				102727D429BEFE3400E91167 /* Main.storyboard */,
+				10ADCC492A23D06800DD71B0 /* secondViewController.swift */,
+				10ADCC472A23D05500DD71B0 /* firstViewController.swift */,
 				107C752F2A1A6B0C0027084A /* chatGPT2ViewController.swift */,
 				107C752B2A1A500D0027084A /* APICaller.swift */,
 				10C128D12A1921F40075F484 /* secondTestViewController.swift */,
@@ -219,8 +232,10 @@
 			children = (
 				1013EDDC29EA7D4C006EE2D4 /* buzzword_list_cell.swift */,
 				1013EDE029EA7D71006EE2D4 /* coavaBuzzwordList.swift */,
+				10ADCC432A23927300DD71B0 /* BuzzwordWebViewController.swift */,
 				1013EDDA29EA7D1C006EE2D4 /* meme_list_cell.swift */,
 				1013EDDE29EA7D66006EE2D4 /* coavaMemeList.swift */,
+				10ADCC452A2392B300DD71B0 /* MemeWebViewController.swift */,
 				107D2F2029D3F972003AC0C5 /* ListViewController.swift */,
 				104BCD5D29D3AF6700F587CF /* BuzzwordListViewController.swift */,
 				104BCD5F29D3AF6E00F587CF /* MemeListViewController.swift */,
@@ -264,6 +279,7 @@
 		1A1161D38A8641A125E0DCE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10ADCC412A238DD900DD71B0 /* WebKit.framework */,
 				CF2EB20EF699DEB9B3A3A23F /* Pods_Coava.framework */,
 			);
 			name = Frameworks;
@@ -400,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B94EE82A0A9CFC00A1913F /* GameTwoExplainViewController.swift in Sources */,
+				10ADCC442A23927300DD71B0 /* BuzzwordWebViewController.swift in Sources */,
 				102727E329BF0A3900E91167 /* SecondViewController.swift in Sources */,
 				701F2AF529F8EA40003562B2 /* APIConstants.swift in Sources */,
 				10FB3D7F29E64190008D86D3 /* UserHatViewController.swift in Sources */,
@@ -434,6 +451,7 @@
 				1080958329CC4713003A43E4 /* GameOneViewController.swift in Sources */,
 				107D2F2129D3F972003AC0C5 /* ListViewController.swift in Sources */,
 				1080958529CC471E003A43E4 /* GameTwoViewController.swift in Sources */,
+				10ADCC4A2A23D06800DD71B0 /* secondViewController.swift in Sources */,
 				10B94EE42A0A9C9C00A1913F /* GameOneExplainViewController.swift in Sources */,
 				107E7DF92A13418C001666D1 /* gameCheckViewController.swift in Sources */,
 				109C9A7929D2BE7A00DA0380 /* ExplainViewController.swift in Sources */,
@@ -445,8 +463,10 @@
 				1083B30E29EE35E900BBBA87 /* UserFixViewController.swift in Sources */,
 				10F0A0D129ED0D4D00531D76 /* ttsTestViewController.swift in Sources */,
 				1080958129CC4705003A43E4 /* GameTabViewController.swift in Sources */,
+				10ADCC462A2392B300DD71B0 /* MemeWebViewController.swift in Sources */,
 				10E05B1D29E31AC10016EBF6 /* GlassesViewController.swift in Sources */,
 				1013EDDB29EA7D1C006EE2D4 /* meme_list_cell.swift in Sources */,
+				10ADCC482A23D05500DD71B0 /* firstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +624,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,7 +657,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

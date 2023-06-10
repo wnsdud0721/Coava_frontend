@@ -65,6 +65,21 @@ class homeCheckViewController: UIViewController {
             ClickChange2.setImage(UIImage(named: "Plantshow.png"), for: .normal)
         }
     }
+    
+    @IBOutlet var ClickChange3: UIButton!
+    @IBAction func ButtonClick3(_ sender: Any) {
+        if isActive && checkSelected == 1{
+            isActive = false
+            ClickChange3.setImage(UIImage(named: "31.png"), for: .normal)
+        }
+        
+        else{
+            isActive = true
+            checkSelected += 1
+            ClickChange3.setImage(UIImage(named: "Plantshow.png"), for: .normal)
+        }
+    }
+    
 
 
 

@@ -12,6 +12,7 @@ class meme_list_cell: UICollectionViewCell {
     @IBOutlet var coavaMemeListImg: UIImageView!
     @IBOutlet var coavaMemeListTitle: UILabel!
     @IBOutlet var coavaMemeListExplain: UILabel!
+    @IBOutlet var searchButton: UIButton!
     
     func setup1(with coavamemelist: coavaMemeList) {
         coavaMemeListImg.image = coavamemelist.coavaMemeListImg

@@ -8,6 +8,8 @@
 import UIKit
 
 class BuzzwordListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return coavabuzzwordlist.count
     }
@@ -20,8 +22,14 @@ class BuzzwordListViewController: UIViewController, UICollectionViewDelegate, UI
         buzzword_list_cell.coavaBuzzwordListImg.layer.borderWidth = 0.5
         buzzword_list_cell.coavaBuzzwordListImg.layer.cornerRadius = 10
         
+        buzzword_list_cell.searchButton.superview?.tag = indexPath.section
+        buzzword_list_cell.searchButton.tag = indexPath.row
+        buzzword_list_cell.searchButton.addTarget(self, action: #selector(self.searchAction), for: .touchUpInside)
+        
+        
         return buzzword_list_cell
     }
+    
     
     @IBOutlet var buzzwordListCollectionView: UICollectionView!
     
@@ -33,7 +41,21 @@ class BuzzwordListViewController: UIViewController, UICollectionViewDelegate, UI
 
     }
     
-
-   
-
+    @IBAction func searchAction(_ sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: sender.superview?.tag ?? 0)
+            let cell = buzzwordListCollectionView.cellForItem(at: indexPath) as! buzzword_list_cell
+            let text = cell.coavaBuzzwordListTitle.text ?? ""
+            
+            if let navigationController = self.navigationController {
+                if !(navigationController.topViewController?.description.contains("BuzzwordWebViewController"))! {
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let viewController = storyBoard.instantiateViewController(withIdentifier: "BuzzwordWebViewController") as! BuzzwordWebViewController
+                    
+                    viewController.search = text
+                    viewController.url = "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&"
+                    
+                    navigationController.pushViewController(viewController, animated: true)
+                }
+            }
+    }
 }

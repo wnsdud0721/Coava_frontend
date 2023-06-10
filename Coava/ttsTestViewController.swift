@@ -15,12 +15,18 @@ class ttsTestViewController: UIViewController {
     @IBOutlet var text: UILabel!
     
     let synthesizer = AVSpeechSynthesizer()
+    let audioSession = AVAudioSession.sharedInstance()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        do {
+            try audioSession.setCategory(AVAudioSession.Category.playback)
+        } catch {
+            print("Failed to set audio session category")
+        }
     }
     
     @IBAction func textToSpeech(_ sender: Any) {
@@ -32,10 +38,14 @@ class ttsTestViewController: UIViewController {
         
         utterance.rate = 0.4
         
+        do {
+            try audioSession.setActive(true)
+        } catch {
+            print("Failed to activate audio session.")
+        }
+        
         synthesizer.speak(utterance)
         
     }
-    
-    
 
 }
