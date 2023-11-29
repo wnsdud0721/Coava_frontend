@@ -8,6 +8,20 @@
 
 <br>
 
+## 목차
+- [📆 프로젝트 기간](#-프로젝트-기간)
+- [⭐️ 프로젝트 소개](#️-프로젝트-소개)
+- [📚 구현 기능](#-구현-기능)
+- [👩🏻‍💻 Contributors](#-contributors)
+- [⚙️ Tech Stack](️#️-tech-stack)
+- [🏹 사용한 라이브러리](#-사용한-라이브러리)
+- [⚡️ 라이브러리 사용 이유](️#️-라이브러리-사용-이유)
+- [🔫 트러블 슈팅](#-트러블-슈팅)
+- [🤝🏻 의사결정](#-의사결정)
+- [🆙 추후 개발 예정](#-추후-개발-예정)
+
+<br>
+
 ## 📆 프로젝트 기간
 
 2022년 08월 01일 ~ 2023년 05월 31일
@@ -117,12 +131,110 @@ Coava는 유행어/밈을 쉽게 접할 수 있고, 아바타와의 게임을 �
 
 ## 🔫 트러블 슈팅
 
-- [페이지 별 데이터 동기화](https://boundless-periwinkle-f12.notion.site/762b7a714ee34fc1a82876d0ec7ead4e?pvs=4)
+### 서버 통신
 
-- [UI 업데이트](https://boundless-periwinkle-f12.notion.site/UI-72b2cb78789a44feb79eb344af85223f?pvs=4)
+#### 1. 서버로부터 알맞은 단어를 받지 못함
+- 원인 : iOS와 서버의 파라미터의 구조가 서로 다름
+  - iOS에서는 choices에 접근한 뒤, 해당 단어를 가져오는 로직으로 작성
+  - 백엔드에서는 choices → words → word로 접근하는 로직으로 작성
+- 해결 : 백엔드 팀원과 구조를 다시 설계함
+  - choices → word로 통일
+  ```swift
+  func sendChatRequest(word: String, completionHandler: @escaping (Word?, Error?) -> Void) {
+      let headers: HTTPHeaders = ["Content-Type": "application/json"]
 
-- [이미지 비율 및 다운로드 속도](https://boundless-periwinkle-f12.notion.site/0a66bb604b6c467c86b52d78ed5e36e6?pvs=4)
+      let parameters: Parameters = [
+           "word": word
+      ]
 
-- [기기 별 레이아웃 조정](https://boundless-periwinkle-f12.notion.site/a411a7136c9240d9879d15b7d339eaa0?pvs=4)
+      AF.request(baseURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+          .validate()
+          .responseDecodable(of: WordResponse.self) { response in
+                switch response.result {
+                case .success(let wordResponse):
+                    if let word = wordResponse.choices.first {
+                        completionHandler(word, nil)
+                        return
+                    }
 
+                case .failure(let error):
+                    completionHandler(nil, error)
+                }
+        }
+    }
+    ```
+  <p align="left">
+    <img src="https://github.com/wnsdud0721/Coava_frontend/assets/92636626/cda59260-d9af-4a5a-b78d-c547036ac3d8" alt="파라미터 구조" width="250" style="margin-right: 16px;"/>
+  </p>
+
+<br>
+
+## 🤝🏻 의사결정
+
+### Davinci 모델의 답변 수준
+
+- 결정 필요 이유 : 모바일 기반 서비스라는 점과 사용자의 원활한 이용을 위해서는 중간점을 찾아야함
+    - max_tokens
+        - 모델이 생성할 최대 토큰(단어나 문자의 조합)수를 정의
+        - 값을 높게 설정하면 더 긴 응답을 받을 수 있지만, 처리 시간도 더 길어질 수 있음
+    - temperature
+        - 모델의 창의성 또는 무작위성의 정도를 설정
+        - 값이 낮으면 더 예측 가능하고 보수적인 응답을 생성하며, 값이 높으면 더 창의적이고 무작위적인 응답을 생성
+- 결정 과정 및 결과
+    - 10명의 사용자에게 응답 수준과 응답 시간을 위주로 설문 진행
+    - max_tokens : 250
+    - temperature : 0.7
+    ```swift
+    //사용 예시
+    func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(apiKey)"]
+        let parameters: Parameters = [
+            "model": "text-davinci-003",
+            "prompt": prompt,
+            "max_tokens": 250,
+            "temperature": 0.7
+        ]
+            
+        AF.request(baseURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            .validate()
+            .responseDecodable(of: ChatResponse.self) { response in
+                switch response.result {
+                case .success(let chatResponse):
+                    if let text = chatResponse.choices.first?.text {
+                        completionHandler(text, nil)
+                        return
+                    }
+                case .failure(let error):
+                    completionHandler(nil, error)
+                }
+                
+        }
+    }
+    ```
+
+<br>
+
+## 🆙 추후 개발 예정
+
+### 웹뷰 검색 기능 관련
+- 현재
+    - 웹 페이지내에서 화면 이동이 원활하지 않음
+    - 검색 결과로 나온 콘텐츠를 확인한 후, 뒤로가기가 되지 않음
+       → 웹 페이지에서 밈/유행어 목록 페이지로 이동하는 뒤로가기 버튼만 존재함
+        
+- 업데이트
+    - 웹 페이지 내에서 이동할 수있는 버튼 생성 (Safari 앱 벤치마킹)
+
+<br>
+ 
+### 아바타 꾸미기 기능 관련
+- 현재
+    - 버튼 클릭 시, 아바타 이미지가 바뀌는 형식으로 구현
+    - 이미지를 Asset 폴더에 저장시켜서 사용하고 있음
+    - 종류가 1가지 밖에 없음
+    - 상점과 연결이 되어 있지 않음
+- 업데이트
+    - 자체 DB에 이미지 저장 및 불러오기 → 아이템 추가를 고려
+    - 상점과 연결하여 사용자가 구매한 아이템만 장착 가능
+ 
 <br>
