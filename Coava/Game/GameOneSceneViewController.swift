@@ -47,7 +47,7 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     let synthesizer = AVSpeechSynthesizer()
     
-    let apiKey = "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"
+    let apiKey = "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"
     let baseURL = "https://api.openai.com/v1/completions"
     
     @IBAction func moveGameOne(_ sender: Any) {
@@ -163,41 +163,6 @@ class GameOneSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         utterance.pitchMultiplier = 0.5
         synthesizer.speak(utterance)
     }
-    
-//    func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
-//        guard let url = URL(string: baseURL) else {
-//            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"]))
-//            return
-//        }
-//
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-//        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//
-//        let parameters = ["model": "text-davinci-003", "prompt": prompt, "max_tokens": 250, "temperature": 0.7] as [String : Any]
-//        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
-//
-//        let session = URLSession.shared
-//        let task = session.dataTask(with: request) { (data, response, error) in
-//            if let error = error {
-//                completionHandler(nil, error)
-//                return
-//            }
-//
-//            if let data = data {
-//                if let jsonObject = try? JSONSerialization.jsonObject(with: data, options: []),
-//                   let jsonDict = jsonObject as? [String: Any],
-//                   let choices = jsonDict["choices"] as? [[String: Any]],
-//                   let text = choices.first?["text"] as? String {
-//                    completionHandler(text, nil)
-//                    return
-//                }
-//            }
-//            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
-//        }
-//        task.resume()
-//    }
     
     func sendChatRequest(prompt: String, completionHandler: @escaping (String?, Error?) -> Void) {
         let headers: HTTPHeaders = ["Authorization": "Bearer \(apiKey)"]

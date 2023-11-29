@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rDw-ra-Sbu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rDw-ra-Sbu">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCb-nT-kvx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2358" y="5310"/>
+            <point key="canvasLocation" x="2705" y="4448"/>
         </scene>
         <!--Second Test View Controller-->
         <scene sceneID="qqZ-ki-wXo">
@@ -1573,10 +1573,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_아바타와 자유대화2" translatesAutoresizingMaskIntoConstraints="NO" id="ARt-T9-7Wc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqV-xl-UtL">
                                 <rect key="frame" x="16" y="546" width="154" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1604,6 +1600,10 @@
                                     <action selector="moveGameScene:" destination="fDe-ol-cb4" eventType="touchUpInside" id="qid-vX-ElF"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_아바타와 자유대화2" translatesAutoresizingMaskIntoConstraints="NO" id="ARt-T9-7Wc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bgv-2u-xTM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1611,7 +1611,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMW-tB-AgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="910" y="5310"/>
+            <point key="canvasLocation" x="2705" y="5354"/>
         </scene>
         <!--Game One Explain View Controller-->
         <scene sceneID="V6i-88-smc">
@@ -1641,7 +1641,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKY-hh-XQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="5310"/>
+            <point key="canvasLocation" x="1950" y="4448"/>
         </scene>
         <!--Meme List View Controller-->
         <scene sceneID="LlC-qU-DbX">
@@ -1831,7 +1831,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGm-Cx-RUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="910" y="4607"/>
+            <point key="canvasLocation" x="1950" y="5354"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bul-8F-3cX">
@@ -2550,7 +2550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJE-iU-iwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="4606"/>
+            <point key="canvasLocation" x="1950" y="3741"/>
         </scene>
         <!--Game Two Scene View Controller-->
         <scene sceneID="kaR-Z6-mTX">
@@ -2611,7 +2611,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41Q-6a-cjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2358" y="4606"/>
+            <point key="canvasLocation" x="2705" y="3741"/>
         </scene>
         <!--Item Check View Controller-->
         <scene sceneID="S13-n5-l1w">
@@ -3208,7 +3208,7 @@
         <image name="Group 219" width="154" height="56"/>
         <image name="Group 222" width="338" height="181"/>
         <image name="Group 223" width="340" height="181"/>
-        <image name="Group 224" width="375" height="623"/>
+        <image name="Group 224" width="750" height="1204"/>
         <image name="Group 236" width="34" height="34"/>
         <image name="Group 238" width="34" height="34"/>
         <image name="Group 246" width="375" height="140"/>
@@ -3265,7 +3265,7 @@
             <color red="0.14499999582767487" green="0.65100002288818359" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
