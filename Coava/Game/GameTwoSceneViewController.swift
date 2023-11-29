@@ -177,40 +177,6 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
         synthesizer.speak(utterance)
     }
     
-//    func sendChatRequest(word: String, completionHandler: @escaping (String?, Error?) -> Void) {
-//        guard let url = URL(string: baseURL) else {
-//            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"]))
-//            return
-//        }
-//
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-//        //request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//
-//        let parameters = ["word": word] as [String : Any]
-//        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
-//
-//        let session = URLSession.shared
-//        let task = session.dataTask(with: request) { (data, response, error) in
-//            if let error = error {
-//                completionHandler(nil, error)
-//                return
-//            }
-//
-//            if let data = data {
-//                if let jsonObject = try? JSONSerialization.jsonObject(with: data, options: []),
-//                   let jsonDict = jsonObject as? [String: Any],
-//                   let choices = jsonDict["choices"] as? [[String: Any]],
-//                   let word = choices.first?["word"] as? String {
-//                    completionHandler(word , nil)
-//                    return
-//                }
-//            }
-//            completionHandler(nil, NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"]))
-//        }
-//        task.resume()
-//    }
     func sendChatRequest(word: String, completionHandler: @escaping (Word?, Error?) -> Void) {
         let headers: HTTPHeaders = ["Content-Type": "application/json"]
 
@@ -233,5 +199,4 @@ class GameTwoSceneViewController: UIViewController, SFSpeechRecognizerDelegate {
                 }
         }
     }
-    
 }
